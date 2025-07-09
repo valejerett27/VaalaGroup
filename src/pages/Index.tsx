@@ -19,7 +19,7 @@ const Index = () => {
       <WhyChooseUs />
       <Projects />
       <Testimonials />
-      <Team />
+      {/* <Team /> */}
       <Contact />
       <Footer />
       <FloatingWhatsApp />

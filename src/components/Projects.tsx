@@ -4,7 +4,7 @@ import { ExternalLink, Github } from "lucide-react";
 const Projects = () => {
   const projects = [
     {
-      title: "E-commerce Multitienda",
+      title: "Park By Vaala",
       category: "Desarrollo Web",
       description: "Plataforma de comercio electrónico con gestión multi-vendor, pagos seguros y analytics avanzados.",
       image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop",
@@ -12,29 +12,29 @@ const Projects = () => {
       results: "+300% ventas online"
     },
     {
-      title: "App de Delivery",
+      title: "Vaala Dev",
       category: "Aplicación Móvil",
       description: "Aplicación nativa para delivery con tracking en tiempo real, pagos digitales y sistema de calificaciones.",
       image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=600&h=400&fit=crop",
       tags: ["React Native", "Firebase", "Maps API", "Push Notifications"],
       results: "50k+ descargas"
     },
-    {
-      title: "Dashboard Empresarial",
-      category: "Business Intelligence",
-      description: "Sistema de análisis de datos con visualizaciones interactivas y reportes automatizados para toma de decisiones.",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop",
-      tags: ["Python", "D3.js", "PostgreSQL", "Docker"],
-      results: "40% más eficiencia"
-    },
-    {
-      title: "Sistema de Gestión",
-      category: "Automatización",
-      description: "ERP personalizado con módulos de inventario, facturación, CRM y reportes financieros integrados.",
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop",
-      tags: ["Laravel", "Vue.js", "MySQL", "API REST"],
-      results: "60% reducción de costos"
-    }
+    // {
+    //   title: "Dashboard Empresarial",
+    //   category: "Business Intelligence",
+    //   description: "Sistema de análisis de datos con visualizaciones interactivas y reportes automatizados para toma de decisiones.",
+    //   image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop",
+    //   tags: ["Python", "D3.js", "PostgreSQL", "Docker"],
+    //   results: "40% más eficiencia"
+    // },
+    // {
+    //   title: "Sistema de Gestión",
+    //   category: "Automatización",
+    //   description: "ERP personalizado con módulos de inventario, facturación, CRM y reportes financieros integrados.",
+    //   image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop",
+    //   tags: ["Laravel", "Vue.js", "MySQL", "API REST"],
+    //   results: "60% reducción de costos"
+    // }
   ];
 
   return (
@@ -42,8 +42,8 @@ const Projects = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold mb-6">
-            Proyectos
-            <span className="bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent"> Destacados</span>
+            Nuestras
+            <span className="bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent"> Unidades</span>
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
             Descubre algunos de nuestros casos de éxito que han transformado 
