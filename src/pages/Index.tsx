@@ -22,7 +22,7 @@ const Index = () => {
       {/* <Team /> */}
       <Contact />
       <Footer />
-      <FloatingWhatsApp />
+      {/* <FloatingWhatsApp /> */}
     </div>
   );
 };

@@ -21,7 +21,7 @@ const Hero = () => {
             SOLUCIÓN
 
 
-            <span className="block bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">
+            <span className="block bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text ">
               E INNOVACIÓN
             </span>
             TECNOLÓGICA

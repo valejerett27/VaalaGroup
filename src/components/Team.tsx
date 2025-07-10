@@ -39,7 +39,7 @@ const Team = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
             Nuestro
-            <span className="bg-gradient-to-r from-cyan-600 to-blue-600 bg-clip-text text-transparent"> Equipo</span>
+            <span className="bg-gradient-to-r from-cyan-600 to-blue-600 bg-clip-text "> Equipo</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Conoce a los profesionales apasionados que hacen posible cada proyecto. 

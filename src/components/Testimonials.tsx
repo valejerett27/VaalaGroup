@@ -32,7 +32,7 @@ const Testimonials = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-[#006699] mb-6">
             Lo Que Dicen Nuestros
-            <span className="text-[#33CCFF] bg-clip-text text-transparent"> Clientes</span>
+            <span className="text-[#33CCFF] bg-clip-text"> Clientes</span>
           </h2>
           <p className="text-xl text-[#006699] font-semibold max-w-3xl mx-auto">
             La satisfacción de nuestros clientes es nuestra mayor recompensa. 

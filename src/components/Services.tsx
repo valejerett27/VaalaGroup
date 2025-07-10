@@ -47,7 +47,7 @@ const Services = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-[#006699] mb-6">
             Nuestros
-            <span className="text-[#33CCFF] bg-clip-text text-transparent"> Servicios</span>
+            <span className="text-[#33CCFF] bg-clip-text "> Servicios</span>
           </h2>
           <p className="text-xl text-[#006699] font-semibold max-w-3xl mx-auto">
             Ofrecemos soluciones tecnológicas integrales que impulsan el crecimiento 

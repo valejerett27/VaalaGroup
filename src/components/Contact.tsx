@@ -30,7 +30,7 @@ const Contact = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold mb-6">
             Hablemos de tu
-            <span className="text-[#33CCFF] bg-clip-text text-transparent"> Proyecto</span>
+            <span className="text-[#33CCFF] bg-clip-text "> Proyecto</span>
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
             Estamos listos para convertir tus ideas en realidad. 

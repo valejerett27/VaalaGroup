@@ -43,7 +43,7 @@ const WhyChooseUs = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-[#006699] mb-6">
             ¿Por Qué Elegir
-            <span className="text-[#33CCFF] bg-clip-text text-transparent"> Vaala Group</span>?
+            <span className="text-[#33CCFF] bg-clip-text"> Vaala Group</span>?
           </h2>
           <p className="text-xl text-[#006699] font-semibold max-w-3xl mx-auto">
             Somos más que un proveedor de tecnología. Somos tu socio estratégico 

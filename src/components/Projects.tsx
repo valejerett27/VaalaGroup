@@ -43,7 +43,7 @@ const Projects = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold mb-6">
             Nuestras
-            <span className="bg-gradient-to-r from-[#33CCFF] to-[#006699] bg-clip-text text-transparent"> Unidades</span>
+            <span className="bg-gradient-to-r from-[#33CCFF] to-[#006699] bg-clip-text "> Unidades</span>
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
             Descubre algunos de nuestros casos de éxito que han transformado 
