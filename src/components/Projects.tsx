@@ -6,18 +6,18 @@ const Projects = () => {
     {
       title: "Park By Vaala",
       category: "Desarrollo Web",
-      description: "Plataforma de comercio electrónico con gestión multi-vendor, pagos seguros y analytics avanzados.",
+      description: "Una Solución tecnológica Integral para la Gestión y Control eficiente de estacionamientos.",
       image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop",
       tags: ["React", "Node.js", "MongoDB", "Stripe"],
-      results: "+300% ventas online"
+      results: "+2.000 usuarios activos"
     },
     {
       title: "Vaala Dev",
       category: "Aplicación Móvil",
-      description: "Aplicación nativa para delivery con tracking en tiempo real, pagos digitales y sistema de calificaciones.",
+      description: "Empresa de Desarrollo tecnológico especializada en crear Soluciones Digitales para Clínicas, Hospitales y Centros Médicos",
       image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=600&h=400&fit=crop",
       tags: ["React Native", "Firebase", "Maps API", "Push Notifications"],
-      results: "50k+ descargas"
+      results: "+3.000 usuarios activos"
     },
     // {
     //   title: "Dashboard Empresarial",
@@ -83,8 +83,8 @@ const Projects = () => {
                 <h3 className="text-2xl font-bold mb-3 group-hover:text-cyan-400 transition-colors">
                   {project.title}
                 </h3>
-                
-                <p className="text-gray-300 mb-6 leading-relaxed">
+
+                <p className="text-gray-300 mb-6 uppercase leading-relaxed">
                   {project.description}
                 </p>
                 
@@ -104,7 +104,7 @@ const Projects = () => {
                     {project.results}
                   </div>
                   <button className="text-gray-400 hover:text-white transition-colors duration-200 flex items-center gap-2">
-                    Ver detalles
+                    Ir a la página
                     <span className="transition-transform group-hover:translate-x-1">→</span>
                   </button>
                 </div>

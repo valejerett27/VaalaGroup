@@ -16,17 +16,20 @@ const Hero = () => {
       
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="animate-fade-in">
-          <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold text-white mb-6 leading-tight">
-            Transformamos
+          <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold text-white mt-20
+           mb-6 leading-tight">
+            SOLUCIÓN
+
+
             <span className="block bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">
-              Ideas en Realidad
+              E INNOVACIÓN
             </span>
-            Digital
+            TECNOLÓGICA
           </h1>
           
-          <p className="text-xl sm:text-2xl text-gray-200 mb-8 max-w-3xl mx-auto leading-relaxed">
-            Somos el partner tecnológico que impulsa tu empresa hacia el futuro con 
-            soluciones innovadoras y estrategias digitales de vanguardia.
+          <p className="text-xl uppercase sm:text-2xl text-gray-200 mb-8 max-w-3xl mx-auto leading-relaxed">
+           Somos un equipo que ofrece soluciones tecnológicas e innovadoras,
+aportando un servicio de calidad y valor a nuestros clientes.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
