@@ -20,9 +20,11 @@ const Footer = () => {
         <div className="py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="lg:col-span-2">
-            <h3 className="text-3xl font-bold bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent mb-4">
-              Vaala Group
-            </h3>
+            <img
+              src="src/img/Negativa_Horizontal_Sin_Fondo.png"
+              alt="Vaala Group"
+              className="h-8 lg:h-10 mb-6"
+            />
             <p className="text-gray-300 mb-6 leading-relaxed max-w-md">
               Transformamos ideas en soluciones digitales innovadoras. 
               Somos tu socio estratégico en la era digital, comprometidos 
@@ -34,13 +36,13 @@ const Footer = () => {
                 <Mail className="text-cyan-400" size={18} />
                 <span className="text-gray-300">contacto@vaalagroup.com</span>
               </div>
-              <div className="flex items-center gap-3">
+              {/* <div className="flex items-center gap-3">
                 <Phone className="text-cyan-400" size={18} />
                 <span className="text-gray-300">+52 (55) 1234-5678</span>
-              </div>
+              </div> */}
               <div className="flex items-center gap-3">
                 <MapPin className="text-cyan-400" size={18} />
-                <span className="text-gray-300">Ciudad de México, México</span>
+                <span className="text-gray-300">Viña del Mar, Chile</span>
               </div>
             </div>
           </div>
@@ -53,7 +55,7 @@ const Footer = () => {
                 { name: "Inicio", href: "#inicio" },
                 { name: "Servicios", href: "#servicios" },
                 { name: "Proyectos", href: "#proyectos" },
-                { name: "Equipo", href: "#equipo" },
+                // { name: "Equipo", href: "#equipo" },
                 { name: "Contacto", href: "#contacto" }
               ].map((link) => (
                 <li key={link.name}>
@@ -73,12 +75,9 @@ const Footer = () => {
             <h4 className="text-lg font-semibold mb-6 text-cyan-400">Servicios</h4>
             <ul className="space-y-3">
               {[
-                "Desarrollo Web",
-                "Apps Móviles",
-                "E-commerce",
-                "Big Data & Analytics",
-                "Ciberseguridad",
-                "Automatización"
+                "Por Definir",
+                "Por Definir",
+                "Por Definir"
               ].map((service) => (
                 <li key={service}>
                   <span className="text-gray-300 hover:text-cyan-400 transition-colors duration-200 cursor-pointer">
@@ -91,7 +90,7 @@ const Footer = () => {
         </div>
 
         {/* Newsletter Section */}
-        <div className="py-8 border-t border-gray-800">
+        {/* <div className="py-8 border-t border-gray-800">
           <div className="flex flex-col lg:flex-row items-center justify-between gap-6">
             <div>
               <h4 className="text-xl font-semibold mb-2 text-cyan-400">Mantente Actualizado</h4>
@@ -108,12 +107,12 @@ const Footer = () => {
               </button>
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* Social Media & Copyright */}
         <div className="py-8 border-t border-gray-800 flex flex-col lg:flex-row items-center justify-between gap-6">
           <div className="text-gray-400 text-center lg:text-left">
-            <p>&copy; 2024 Vaala Group. Todos los derechos reservados.</p>
+            <p>&copy; 2025 Vaala Group. Todos los derechos reservados.</p>
             <div className="flex gap-6 mt-2 justify-center lg:justify-start">
               <a href="#" className="hover:text-cyan-400 transition-colors text-sm">Política de Privacidad</a>
               <a href="#" className="hover:text-cyan-400 transition-colors text-sm">Términos de Servicio</a>

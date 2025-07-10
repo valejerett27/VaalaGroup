@@ -6,7 +6,7 @@ const Testimonials = () => {
     {
       name: "María González",
       role: "CEO, TechStart Solutions",
-      image: "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=80&h=80&fit=crop&crop=face",
+      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=80&h=80&fit=crop&crop=face",
       content: "Vaala Group transformó completamente nuestro e-commerce. Las ventas aumentaron un 300% en los primeros 6 meses. Su equipo es excepcional.",
       rating: 5
     },
@@ -30,11 +30,11 @@ const Testimonials = () => {
     <section className="py-20 bg-gradient-to-br from-cyan-50 to-blue-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+          <h2 className="text-4xl lg:text-5xl font-bold text-[#006699] mb-6">
             Lo Que Dicen Nuestros
-            <span className="bg-gradient-to-r from-cyan-600 to-blue-600 bg-clip-text text-transparent"> Clientes</span>
+            <span className="text-[#33CCFF] bg-clip-text text-transparent"> Clientes</span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-[#006699] font-semibold max-w-3xl mx-auto">
             La satisfacción de nuestros clientes es nuestra mayor recompensa. 
             Descubre por qué confían en nosotros para sus proyectos más importantes.
           </p>
@@ -74,23 +74,30 @@ const Testimonials = () => {
         </div>
 
         <div className="mt-16 text-center">
-          <div className="inline-flex items-center gap-8 bg-white rounded-2xl px-8 py-6 shadow-lg">
-            <div className="text-center">
-              <div className="text-3xl font-bold text-cyan-600 mb-1">98%</div>
-              <div className="text-gray-600 text-sm">Satisfacción</div>
-            </div>
-            <div className="w-px h-12 bg-gray-200"></div>
-            <div className="text-center">
-              <div className="text-3xl font-bold text-cyan-600 mb-1">100+</div>
-              <div className="text-gray-600 text-sm">Clientes Felices</div>
-            </div>
-            <div className="w-px h-12 bg-gray-200"></div>
-            <div className="text-center">
-              <div className="text-3xl font-bold text-cyan-600 mb-1">24h</div>
-              <div className="text-gray-600 text-sm">Tiempo Respuesta</div>
-            </div>
-          </div>
-        </div>
+  <div className="inline-flex flex-col md:flex-row items-center gap-6 md:gap-8 bg-white rounded-2xl px-6 md:px-8 py-6 shadow-lg">
+    <div className="text-center">
+      <div className="text-3xl font-bold text-[#006699] mb-1">98%</div>
+      <div className="text-gray-600 text-sm">Satisfacción</div>
+    </div>
+
+    <div className="hidden md:block w-px h-12 bg-gray-200"></div>
+    <div className="block md:hidden w-full h-px bg-gray-200"></div>
+
+    <div className="text-center">
+      <div className="text-3xl font-bold text-[#33ccff] mb-1">100+</div>
+      <div className="text-gray-600 text-sm">Clientes Felices</div>
+    </div>
+
+    <div className="hidden md:block w-px h-12 bg-gray-200"></div>
+    <div className="block md:hidden w-full h-px bg-gray-200"></div>
+
+    <div className="text-center">
+      <div className="text-3xl font-bold text-[#006699] mb-1">24h</div>
+      <div className="text-gray-600 text-sm">Tiempo Respuesta</div>
+    </div>
+  </div>
+</div>
+
       </div>
     </section>
   );

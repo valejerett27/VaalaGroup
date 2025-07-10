@@ -5,51 +5,51 @@ const Services = () => {
   const services = [
     {
       icon: Code,
-      title: "Desarrollo Web",
+      title: "Servicio por definir",
       description: "Aplicaciones web modernas y escalables con las últimas tecnologías",
-      features: ["React & Next.js", "APIs RESTful", "Arquitectura Escalable"]
+      features: ["Características"]
     },
     {
       icon: Smartphone,
-      title: "Apps Móviles",
+      title: "Servicio por definir",
       description: "Aplicaciones nativas e híbridas para iOS y Android",
-      features: ["React Native", "Flutter", "Diseño UX/UI"]
+      features: ["Características"]
     },
     {
       icon: Globe,
-      title: "E-commerce",
+      title: "Servicio por definir",
       description: "Tiendas online optimizadas para conversión y ventas",
-      features: ["Shopify", "WooCommerce", "Pasarelas de Pago"]
-    },
-    {
-      icon: Database,
-      title: "Big Data & Analytics",
-      description: "Análisis de datos y business intelligence para decisiones estratégicas",
-      features: ["Data Mining", "Machine Learning", "Dashboards"]
-    },
-    {
-      icon: Shield,
-      title: "Ciberseguridad",
-      description: "Protección integral de sistemas y datos empresariales",
-      features: ["Auditorías", "Pentesting", "Compliance"]
-    },
-    {
-      icon: Zap,
-      title: "Automatización",
-      description: "Optimización de procesos mediante herramientas inteligentes",
-      features: ["RPA", "Workflows", "Integrations"]
+      features: ["Características"]
     }
+    // {
+    //   icon: Database,
+    //   title: "Big Data & Analytics",
+    //   description: "Análisis de datos y business intelligence para decisiones estratégicas",
+    //   features: ["Data Mining", "Machine Learning", "Dashboards"]
+    // },
+    // {
+    //   icon: Shield,
+    //   title: "Ciberseguridad",
+    //   description: "Protección integral de sistemas y datos empresariales",
+    //   features: ["Auditorías", "Pentesting", "Compliance"]
+    // },
+    // {
+    //   icon: Zap,
+    //   title: "Automatización",
+    //   description: "Optimización de procesos mediante herramientas inteligentes",
+    //   features: ["RPA", "Workflows", "Integrations"]
+    // }
   ];
 
   return (
     <section id="servicios" className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+          <h2 className="text-4xl lg:text-5xl font-bold text-[#006699] mb-6">
             Nuestros
-            <span className="bg-gradient-to-r from-cyan-600 to-blue-600 bg-clip-text text-transparent"> Servicios</span>
+            <span className="text-[#33CCFF] bg-clip-text text-transparent"> Servicios</span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-[#006699] font-semibold max-w-3xl mx-auto">
             Ofrecemos soluciones tecnológicas integrales que impulsan el crecimiento 
             y la transformación digital de tu empresa.
           </p>
@@ -61,33 +61,33 @@ const Services = () => {
               key={index}
               className="group bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100"
             >
-              <div className="bg-gradient-to-br from-cyan-500 to-blue-600 w-16 h-16 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+              <div className="bg-gradient-to-br from-[#006699] to-[#33CCFF] w-16 h-16 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                 <service.icon className="text-white" size={28} />
               </div>
               
-              <h3 className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-cyan-600 transition-colors duration-300">
+              <h3 className="text-2xl font-bold text-[#006699] mb-4 group-hover:text-cyan-600 transition-colors duration-300">
                 {service.title}
               </h3>
               
-              <p className="text-gray-600 mb-6 leading-relaxed">
+              <p className="text-[#006699] mb-6 leading-relaxed">
                 {service.description}
               </p>
               
               <ul className="space-y-2">
                 {service.features.map((feature, idx) => (
-                  <li key={idx} className="flex items-center text-sm text-gray-500">
-                    <div className="w-2 h-2 bg-cyan-500 rounded-full mr-3"></div>
+                  <li key={idx} className="flex items-center text-sm text-[#006699]">
+                    <div className="w-2 h-2 bg-[#33CCFF] rounded-full mr-3"></div>
                     {feature}
                   </li>
                 ))}
               </ul>
               
-              <div className="mt-6 pt-6 border-t border-gray-100">
+              {/* <div className="mt-6 pt-6 border-t border-gray-100">
                 <button className="text-cyan-600 font-semibold hover:text-cyan-700 transition-colors duration-200 flex items-center gap-2 group-hover:gap-3">
                   Saber más
                   <span className="transition-all duration-200">→</span>
                 </button>
-              </div>
+              </div> */}
             </div>
           ))}
         </div>

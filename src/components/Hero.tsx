@@ -27,7 +27,7 @@ const Hero = () => {
             TECNOLÓGICA
           </h1>
           
-          <p className="text-xl uppercase sm:text-2xl text-gray-200 mb-8 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl uppercase sm:text-2xl text-gray-200 font-semibold mb-8 max-w-3xl mx-auto leading-relaxed">
            Somos un equipo que ofrece soluciones tecnológicas e innovadoras,
 aportando un servicio de calidad y valor a nuestros clientes.
           </p>

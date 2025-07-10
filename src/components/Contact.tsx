@@ -13,8 +13,8 @@ const Contact = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("Form submitted:", formData);
-    // Here you would typically send the data to your backend
+    console.log("Formulario Enviado:", formData);
+    // Acá debemos enviar la información del formulario hacia el backend o API
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
@@ -30,7 +30,7 @@ const Contact = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold mb-6">
             Hablemos de tu
-            <span className="bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent"> Proyecto</span>
+            <span className="text-[#33CCFF] bg-clip-text text-transparent"> Proyecto</span>
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
             Estamos listos para convertir tus ideas en realidad. 
@@ -41,7 +41,7 @@ const Contact = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Contact Form */}
           <div className="bg-gray-800 rounded-2xl p-8">
-            <h3 className="text-2xl font-bold mb-6 text-cyan-400">Solicita una Consulta Gratuita</h3>
+            <h3 className="text-2xl font-bold mb-6 text-[#33CCFF]">Solicita una Consulta Gratuita</h3>
             
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -134,7 +134,7 @@ const Contact = () => {
               
               <button
                 type="submit"
-                className="w-full bg-gradient-to-r from-cyan-600 to-blue-600 text-white px-8 py-4 rounded-lg font-semibold hover:shadow-lg hover:scale-105 transition-all duration-300 flex items-center justify-center gap-2"
+                className="w-full bg-gradient-to-r from-[#006699] to-[#33CCFF] text-white px-8 py-4 rounded-lg font-semibold hover:shadow-lg hover:scale-105 transition-all duration-300 flex items-center justify-center gap-2"
               >
                 <Send size={20} />
                 Enviar Mensaje
@@ -145,22 +145,21 @@ const Contact = () => {
           {/* Contact Info */}
           <div className="space-y-8">
             <div className="bg-gradient-to-br from-cyan-600/10 to-blue-600/10 rounded-2xl p-8 border border-cyan-500/20">
-              <h3 className="text-2xl font-bold mb-6 text-cyan-400">Información de Contacto</h3>
+              <h3 className="text-2xl font-bold mb-6 text-[#33CCFF]">Información de Contacto</h3>
               
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
-                  <div className="bg-cyan-600 p-3 rounded-lg">
+                  <div className="bg-[#33CCFF] p-3 rounded-lg">
                     <Mail className="text-white" size={20} />
                   </div>
                   <div>
                     <h4 className="font-semibold mb-1">Email</h4>
                     <p className="text-gray-300">contacto@vaalagroup.com</p>
-                    <p className="text-gray-300">ventas@vaalagroup.com</p>
                   </div>
                 </div>
                 
-                <div className="flex items-start gap-4">
-                  <div className="bg-cyan-600 p-3 rounded-lg">
+                {/* <div className="flex items-start gap-4">
+                  <div className="bg-[#33CCFF] p-3 rounded-lg">
                     <Phone className="text-white" size={20} />
                   </div>
                   <div>
@@ -168,23 +167,22 @@ const Contact = () => {
                     <p className="text-gray-300">+52 (55) 1234-5678</p>
                     <p className="text-gray-300">+1 (555) 987-6543</p>
                   </div>
-                </div>
+                </div> */}
                 
                 <div className="flex items-start gap-4">
-                  <div className="bg-cyan-600 p-3 rounded-lg">
+                  <div className="bg-[#33CCFF] p-3 rounded-lg">
                     <MapPin className="text-white" size={20} />
                   </div>
                   <div>
                     <h4 className="font-semibold mb-1">Oficina</h4>
                     <p className="text-gray-300">
-                      Av. Reforma 123, Piso 15<br />
-                      Ciudad de México, México
+                      Viña del Mar, Chile
                     </p>
                   </div>
                 </div>
                 
                 <div className="flex items-start gap-4">
-                  <div className="bg-cyan-600 p-3 rounded-lg">
+                  <div className="bg-[#33CCFF] p-3 rounded-lg">
                     <Clock className="text-white" size={20} />
                   </div>
                   <div>
@@ -196,7 +194,7 @@ const Contact = () => {
               </div>
             </div>
 
-            <div className="bg-gradient-to-br from-blue-600/10 to-purple-600/10 rounded-2xl p-8 border border-blue-500/20">
+            {/* <div className="bg-gradient-to-br from-blue-600/10 to-purple-600/10 rounded-2xl p-8 border border-blue-500/20">
               <h3 className="text-xl font-bold mb-4 text-blue-400">¿Prefieres una Reunión Virtual?</h3>
               <p className="text-gray-300 mb-6">
                 Agenda una videollamada gratuita de 30 minutos para discutir tu proyecto en detalle.
@@ -205,7 +203,7 @@ const Contact = () => {
                 <Calendar size={18} />
                 Agendar Reunión
               </button>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

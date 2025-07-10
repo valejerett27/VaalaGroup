@@ -5,17 +5,17 @@ const Projects = () => {
   const projects = [
     {
       title: "Park By Vaala",
-      category: "Desarrollo Web",
+      category: "Texto por definir",
       description: "Una Solución tecnológica Integral para la Gestión y Control eficiente de estacionamientos.",
-      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop",
+      image: "src/img/park_principal.png",
       tags: ["React", "Node.js", "MongoDB", "Stripe"],
       results: "+2.000 usuarios activos"
     },
     {
       title: "Vaala Dev",
-      category: "Aplicación Móvil",
+      category: "Texto por definir",
       description: "Empresa de Desarrollo tecnológico especializada en crear Soluciones Digitales para Clínicas, Hospitales y Centros Médicos",
-      image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=600&h=400&fit=crop",
+      image: "src/img/Principal_verde.png",
       tags: ["React Native", "Firebase", "Maps API", "Push Notifications"],
       results: "+3.000 usuarios activos"
     },
@@ -43,7 +43,7 @@ const Projects = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold mb-6">
             Nuestras
-            <span className="bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent"> Unidades</span>
+            <span className="bg-gradient-to-r from-[#33CCFF] to-[#006699] bg-clip-text text-transparent"> Unidades</span>
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
             Descubre algunos de nuestros casos de éxito que han transformado 
@@ -61,7 +61,7 @@ const Projects = () => {
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+                  className="h-48 mx-auto group-hover:scale-110 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent opacity-60"></div>
                 <div className="absolute top-4 left-4">

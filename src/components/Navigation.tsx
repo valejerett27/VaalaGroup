@@ -18,7 +18,7 @@ const Navigation = () => {
     { name: "Inicio", href: "#inicio" },
     { name: "Servicios", href: "#servicios" },
     { name: "Proyectos", href: "#proyectos" },
-    { name: "Equipo", href: "#equipo" },
+    // { name: "Equipo", href: "#equipo" },
     { name: "Contacto", href: "#contacto" },
   ];
 
@@ -34,7 +34,7 @@ const Navigation = () => {
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? "bg-[#0891B2] backdrop-blur-lg shadow-lg border-b border-cyan-100"
+          ? "bg-[#3F3F3F] backdrop-blur-lg shadow-lg border-b border-cyan-100"
           : "bg-transparent"
       }`}
     >
@@ -62,7 +62,7 @@ const Navigation = () => {
             ))}
             <button
               onClick={() => scrollToSection("#contacto")}
-              className="bg-gradient-to-r from-cyan-600 to-blue-600 text-white px-6 py-2 rounded-full hover:shadow-lg hover:scale-105 transition-all duration-200"
+              className="bg-gradient-to-r from-[#006699] to-[#4BC2F1] text-white px-6 py-2 rounded-full hover:shadow-lg hover:scale-105 transition-all duration-200"
             >
               Contáctanos
             </button>
