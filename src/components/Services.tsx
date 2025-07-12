@@ -1,25 +1,27 @@
 
 import { Code, Smartphone, Globe, Database, Shield, Zap } from "lucide-react";
+import { features } from "process";
 
 const Services = () => {
   const services = [
     {
       icon: Code,
-      title: "Servicio por definir",
-      description: "Aplicaciones web modernas y escalables con las últimas tecnologías",
-      features: ["Características"]
+      title: "Consultoría y Desarrollo de Sistemas",
+      description: "Creamos sistemas personalizados que responden a los desafíos y flujos específicos de cada organización.",
+      // features: [" Análisis funcional y técnico - Soluciones escalables y adaptables - Integración con sistemas existentes"]
+      features: ["Análisis funcional y técnico", "Soluciones escalables y adaptables", "Integración con sistemas existentes"]
     },
     {
       icon: Smartphone,
-      title: "Servicio por definir",
-      description: "Aplicaciones nativas e híbridas para iOS y Android",
-      features: ["Características"]
+      title: "Implementación y Optimización de Procesos",
+      description: " Digitalizamos procesos clave para mejorar la eficiencia, trazabilidad y toma de decisiones.",
+      features: ["Automatización y control", "Mejora continua", "Visión estratégica de datos"]
     },
     {
       icon: Globe,
-      title: "Servicio por definir",
-      description: "Tiendas online optimizadas para conversión y ventas",
-      features: ["Características"]
+      title: "Soporte, Capacitación y Acompañamiento",
+      description: "Aseguramos la continuidad operacional mediante soporte técnico, capacitación y mejoras progresivas.",
+      features: ["Asistencia continua", "Capacitación a usuarios", "Ajustes y evolutivos según requerimientos"]
     }
     // {
     //   icon: Database,
@@ -45,13 +47,12 @@ const Services = () => {
     <section id="servicios" className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold text-[#006699] mb-6">
+          <h2 className="text-4xl lg:text-5xl uppercase font-bold text-[#022E46] mb-6">
             Nuestros
-            <span className="text-[#33CCFF] bg-clip-text "> Servicios</span>
+            <span className="bg-gradient-to-r from-[#33CCFF] to-[#006699] bg-clip-text text-transparent uppercase"> Servicios</span>
           </h2>
-          <p className="text-xl text-[#006699] font-semibold max-w-3xl mx-auto">
-            Ofrecemos soluciones tecnológicas integrales que impulsan el crecimiento 
-            y la transformación digital de tu empresa.
+          <p className="text-xl text-[#3F3F3F] font-light max-w-3xl mx-auto">
+            Cada uno de nuestros servicios se adapta a las necesidades del cliente y al contexto de su industria.
           </p>
         </div>
 

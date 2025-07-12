@@ -18,26 +18,25 @@ const Hero = () => {
         <div className="animate-fade-in">
           <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold text-white mt-20
            mb-6 leading-tight">
-            SOLUCIÓN
+            SOLUCIÓN E INNOVACIÓN
 
 
-            <span className="block bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text ">
-              E INNOVACIÓN
+            <span className="block bg-gradient-to-r from-[#33CCFF] to-[#006699] bg-clip-text text-transparent">
+              TECNOLÓGICA
             </span>
-            TECNOLÓGICA
+            
           </h1>
           
-          <p className="text-xl uppercase sm:text-2xl text-gray-200 font-semibold mb-8 max-w-3xl mx-auto leading-relaxed">
-           Somos un equipo que ofrece soluciones tecnológicas e innovadoras,
-aportando un servicio de calidad y valor a nuestros clientes.
+          <p className="text-xl sm:text-2xl text-gray-200 font-light mb-8 max-w-2xl mx-auto leading-relaxed">
+           Transformamos ideas en sistemas tecnológicos que suman valor, orden y eficiencia a nuestros clientes.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
             <button
               onClick={() => scrollToSection("#contacto")}
-              className="group bg-gradient-to-r from-cyan-600 to-blue-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:shadow-2xl hover:scale-105 transition-all duration-300 flex items-center gap-2"
+              className="group bg-gradient-to-r from-[#33CCFF] to-[#006699] text-white px-8 py-4 rounded-full text-lg font-semibold hover:shadow-2xl hover:scale-105 transition-all duration-300 flex items-center gap-2"
             >
-              Comenzar Proyecto
+              Impulsa tu solución
               <ArrowRight className="group-hover:translate-x-1 transition-transform duration-200" size={20} />
             </button>
             
@@ -46,21 +45,21 @@ aportando un servicio de calidad y valor a nuestros clientes.
               className="group bg-white/10 backdrop-blur-sm border border-white/20 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white/20 transition-all duration-300 flex items-center gap-2"
             >
               <Play size={20} />
-              Ver Servicios
+              Explorar soluciones
             </button>
           </div>
           
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 max-w-4xl mx-auto">
             <div className="text-center">
-              <div className="text-3xl lg:text-4xl font-bold text-cyan-400 mb-2">50+</div>
+              <div className="text-3xl lg:text-4xl font-bold text-[#30E4A2] mb-2">50+</div>
               <div className="text-gray-300">Proyectos Exitosos</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl lg:text-4xl font-bold text-cyan-400 mb-2">5+</div>
+              <div className="text-3xl lg:text-4xl font-bold text-[#30E4A2] mb-2">5+</div>
               <div className="text-gray-300">Años de Experiencia</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl lg:text-4xl font-bold text-cyan-400 mb-2">24/7</div>
+              <div className="text-3xl lg:text-4xl font-bold text-[#30E4A2] mb-2">24/7</div>
               <div className="text-gray-300">Soporte Técnico</div>
             </div>
           </div>
