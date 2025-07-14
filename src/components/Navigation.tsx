@@ -21,7 +21,7 @@ const Navigation = () => {
     { name: "Servicios", href: "#servicios" },
     { name: "Proyectos", href: "#proyectos" },
     // { name: "Equipo", href: "#equipo" },
-    { name: "Contacto", href: "#contacto" },
+    // { name: "Contacto", href: "#contacto" },
   ];
 
   const scrollToSection = (href: string) => {
@@ -36,7 +36,7 @@ const Navigation = () => {
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? "bg-[#3F3F3F] backdrop-blur-lg shadow-lg border-b border-cyan-100"
+          ? "bg-gradient-to-b from-[#022E46] to-[#0C4A6E] backdrop-blur-lg shadow-lg border-b border-cyan-100"
           : "bg-transparent"
       }`}
     >

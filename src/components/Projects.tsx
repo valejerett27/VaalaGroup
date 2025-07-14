@@ -7,7 +7,7 @@ import principalVerde from '../img/Principal_verde.png';
 const Projects = () => {
   const projects = [
   {
-    title: "Park By Vaala",
+    title: "Park by Vaala",
     category: "Texto por definir",
     description: "Una Solución tecnológica Integral para la Gestión y Control eficiente de estacionamientos.",
     image: parkPrincipal,
@@ -15,7 +15,7 @@ const Projects = () => {
     results: "+2.000 usuarios activos"
   },
   {
-    title: "Vaala Dev",
+    title: "Vaaladev",
     category: "Texto por definir",
     description: "Empresa de Desarrollo tecnológico especializada en crear Soluciones Digitales para Clínicas, Hospitales y Centros Médicos",
     image: principalVerde,
@@ -29,12 +29,12 @@ const Projects = () => {
     <section id="proyectos" className="py-20 bg-gray-900 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold mb-6">
+          <h2 className="text-4xl lg:text-5xl uppercase font-bold mb-6">
             Nuestras
-            <span className="bg-gradient-to-r from-[#33CCFF] to-[#006699] bg-clip-text "> Unidades</span>
+            <span className="bg-gradient-to-r from-[#33CCFF] to-[#006699] bg-clip-text text-transparent"> Unidades</span>
           </h2>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Descubre algunos de nuestros casos de éxito que han transformado 
+          <p className="text-xl text-white font-light max-w-3xl mx-auto">
+            Descubre algunos de nuestros casos de éxito que han transformado
             la manera de hacer negocios de nuestros clientes.
           </p>
         </div>

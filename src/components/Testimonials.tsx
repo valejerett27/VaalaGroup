@@ -35,7 +35,7 @@ const Testimonials = () => {
             <span className="text-[#33CCFF] bg-clip-text"> Clientes</span>
           </h2>
           <p className="text-xl text-[#006699] font-semibold max-w-3xl mx-auto">
-            La satisfacción de nuestros clientes es nuestra mayor recompensa. 
+            La satisfacción de nuestros clientes es nuestra mayor recompensa.
             Descubre por qué confían en nosotros para sus proyectos más importantes.
           </p>
         </div>
@@ -47,7 +47,7 @@ const Testimonials = () => {
               className="group bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 relative"
             >
               <Quote className="absolute top-6 right-6 text-cyan-200 group-hover:text-cyan-300 transition-colors" size={32} />
-              
+
               <div className="flex items-center mb-6">
                 <img
                   src={testimonial.image}
@@ -59,13 +59,13 @@ const Testimonials = () => {
                   <p className="text-gray-600 text-sm">{testimonial.role}</p>
                 </div>
               </div>
-              
+
               <div className="flex mb-4">
                 {[...Array(testimonial.rating)].map((_, i) => (
                   <Star key={i} className="text-yellow-400 fill-current" size={16} />
                 ))}
               </div>
-              
+
               <p className="text-gray-700 leading-relaxed italic">
                 "{testimonial.content}"
               </p>
@@ -74,29 +74,29 @@ const Testimonials = () => {
         </div>
 
         <div className="mt-16 text-center">
-  <div className="inline-flex flex-col md:flex-row items-center gap-6 md:gap-8 bg-white rounded-2xl px-6 md:px-8 py-6 shadow-lg">
-    <div className="text-center">
-      <div className="text-3xl font-bold text-[#006699] mb-1">98%</div>
-      <div className="text-gray-600 text-sm">Satisfacción</div>
-    </div>
+          <div className="inline-flex flex-col md:flex-row items-center gap-6 md:gap-8 bg-white rounded-2xl px-6 md:px-8 py-6 shadow-lg">
+            <div className="text-center">
+              <div className="text-3xl font-bold text-[#006699] mb-1">98%</div>
+              <div className="text-gray-600 text-sm">Satisfacción</div>
+            </div>
 
-    <div className="hidden md:block w-px h-12 bg-gray-200"></div>
-    <div className="block md:hidden w-full h-px bg-gray-200"></div>
+            <div className="hidden md:block w-px h-12 bg-gray-200"></div>
+            <div className="block md:hidden w-full h-px bg-gray-200"></div>
 
-    <div className="text-center">
-      <div className="text-3xl font-bold text-[#33ccff] mb-1">100+</div>
-      <div className="text-gray-600 text-sm">Clientes Felices</div>
-    </div>
+            <div className="text-center">
+              <div className="text-3xl font-bold text-[#33ccff] mb-1">100+</div>
+              <div className="text-gray-600 text-sm">Clientes Felices</div>
+            </div>
 
-    <div className="hidden md:block w-px h-12 bg-gray-200"></div>
-    <div className="block md:hidden w-full h-px bg-gray-200"></div>
+            <div className="hidden md:block w-px h-12 bg-gray-200"></div>
+            <div className="block md:hidden w-full h-px bg-gray-200"></div>
 
-    <div className="text-center">
-      <div className="text-3xl font-bold text-[#006699] mb-1">24h</div>
-      <div className="text-gray-600 text-sm">Tiempo Respuesta</div>
-    </div>
-  </div>
-</div>
+            <div className="text-center">
+              <div className="text-3xl font-bold text-[#006699] mb-1">24h</div>
+              <div className="text-gray-600 text-sm">Tiempo Respuesta</div>
+            </div>
+          </div>
+        </div>
 
       </div>
     </section>
