@@ -1,41 +1,29 @@
 
 import { ExternalLink, Github } from "lucide-react";
+import parkPrincipal from '../img/park_principal.png';
+import principalVerde from '../img/Principal_verde.png';
+
 
 const Projects = () => {
   const projects = [
-    {
-      title: "Park By Vaala",
-      category: "Texto por definir",
-      description: "Una Solución tecnológica Integral para la Gestión y Control eficiente de estacionamientos.",
-      image: "src/img/park_principal.png",
-      tags: ["React", "Node.js", "MongoDB", "Stripe"],
-      results: "+2.000 usuarios activos"
-    },
-    {
-      title: "Vaala Dev",
-      category: "Texto por definir",
-      description: "Empresa de Desarrollo tecnológico especializada en crear Soluciones Digitales para Clínicas, Hospitales y Centros Médicos",
-      image: "src/img/Principal_verde.png",
-      tags: ["React Native", "Firebase", "Maps API", "Push Notifications"],
-      results: "+3.000 usuarios activos"
-    },
-    // {
-    //   title: "Dashboard Empresarial",
-    //   category: "Business Intelligence",
-    //   description: "Sistema de análisis de datos con visualizaciones interactivas y reportes automatizados para toma de decisiones.",
-    //   image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop",
-    //   tags: ["Python", "D3.js", "PostgreSQL", "Docker"],
-    //   results: "40% más eficiencia"
-    // },
-    // {
-    //   title: "Sistema de Gestión",
-    //   category: "Automatización",
-    //   description: "ERP personalizado con módulos de inventario, facturación, CRM y reportes financieros integrados.",
-    //   image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop",
-    //   tags: ["Laravel", "Vue.js", "MySQL", "API REST"],
-    //   results: "60% reducción de costos"
-    // }
-  ];
+  {
+    title: "Park By Vaala",
+    category: "Texto por definir",
+    description: "Una Solución tecnológica Integral para la Gestión y Control eficiente de estacionamientos.",
+    image: parkPrincipal,
+    tags: ["React", "Node.js", "MongoDB", "Stripe"],
+    results: "+2.000 usuarios activos"
+  },
+  {
+    title: "Vaala Dev",
+    category: "Texto por definir",
+    description: "Empresa de Desarrollo tecnológico especializada en crear Soluciones Digitales para Clínicas, Hospitales y Centros Médicos",
+    image: principalVerde,
+    tags: ["React Native", "Firebase", "Maps API", "Push Notifications"],
+    results: "+3.000 usuarios activos"
+  }
+];
+
 
   return (
     <section id="proyectos" className="py-20 bg-gray-900 text-white">

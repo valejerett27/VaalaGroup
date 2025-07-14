@@ -1,6 +1,8 @@
 
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
+import logoVaala from '../img/Negativa_Horizontal_Sin_Fondo.png';
+
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -42,7 +44,7 @@ const Navigation = () => {
         <div className="flex justify-between items-center h-16 lg:h-20">
           <div className="flex-shrink-0">
             <img
-              src="src/img/Negativa_Horizontal_Sin_Fondo.png"
+              src={logoVaala}
               alt="Vaala Group"
               className="h-8 lg:h-10"
             />

@@ -1,5 +1,7 @@
 
 import { Mail, Phone, MapPin, Linkedin, Twitter, Instagram, Facebook, ArrowUp } from "lucide-react";
+import logoVaala from '../img/Negativa_Horizontal_Sin_Fondo.png';
+
 
 const Footer = () => {
   const scrollToTop = () => {
@@ -21,7 +23,7 @@ const Footer = () => {
           {/* Company Info */}
           <div className="lg:col-span-2">
             <img
-              src="src/img/Negativa_Horizontal_Sin_Fondo.png"
+              src={logoVaala}
               alt="Vaala Group"
               className="h-8 lg:h-10 mb-6"
             />
