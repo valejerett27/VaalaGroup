@@ -53,7 +53,7 @@ const WhyChooseUs = () => {
         <div className="mt-16 text-center">
           <div className="inline-flex flex-col md:flex-row items-center gap-6 md:gap-8 bg-white rounded-2xl px-6 md:px-8 py-6 shadow-lg">
             <div className="text-center">
-              <div className="text-3xl font-bold text-[#006699] mb-1">+890 <br /><span className="text-1xl">MILLONES</span></div>
+              <div className="text-2xl font-bold text-[#006699] mb-1 leading-none">+890 <br /><span className="text-1xl">MILLONES</span></div>
               <div className="text-gray-600 text-sm">Mensuales en transacciones soportados en nuestros sistemas</div>
             </div>
 
@@ -61,7 +61,7 @@ const WhyChooseUs = () => {
             <div className="block md:hidden w-full h-px bg-gray-200"></div>
 
             <div className="text-center">
-              <div className="text-3xl font-bold text-[#33ccff]  uppercase mb-1">5000 <br />Usuarios activos</div>
+              <div className="text-2xl font-bold text-[#33ccff]  uppercase mb-1 leading-none">5.000 <br />Usuarios activos</div>
               <div className="text-gray-600 text-sm">en plataforma portal de Salud</div>
             </div>
 
@@ -69,20 +69,20 @@ const WhyChooseUs = () => {
             <div className="block md:hidden w-full h-px bg-gray-200"></div>
 
             <div className="text-center">
-              <div className="text-3xl font-bold text-[#006699] mb-1">120 <br />MILLONES</div>
+              <div className="text-2xl font-bold text-[#006699] mb-1 leading-none">120 <br />MILLONES</div>
               <div className="text-gray-600 text-sm">Disminución de riesgo financiero</div>
             </div>
             <div className="hidden md:block w-px h-12 bg-gray-200"></div>
             <div className="block md:hidden w-full h-px bg-gray-200"></div>
 
             <div className="text-center">
-              <div className="text-3xl font-bold text-[#006699] mb-1">+480 <br /> MILLONES</div>
+              <div className="text-2xl font-bold text-[#006699] mb-1 leading-none">+480 <br /> MILLONES</div>
               <div className="text-gray-600 text-sm">Utilidades hemos aportando a nuestros clientes</div>
             </div>
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {reasons.map((reason, index) => (
             <div
               key={index}
@@ -101,7 +101,7 @@ const WhyChooseUs = () => {
               </p>
             </div>
           ))}
-        </div>
+        </div> */}
 
         <div className="mt-16 bg-gradient-to-r from-[#006699] to-[#33CCFF] rounded-3xl p-8 lg:p-12 text-center text-white">
           <h3 className="text-3xl lg:text-4xl font-bold uppercase mb-4">
