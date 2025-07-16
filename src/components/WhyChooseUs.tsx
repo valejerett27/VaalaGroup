@@ -41,8 +41,9 @@ const WhyChooseUs = () => {
       
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="bg-gradient-to-r from-[#33CCFF] to-[#006699] bg-clip-text text-4xl lg:text-5xl font-bold text-transparent mb-6">
-            RESULTADOS
+          <h2 className="text-4xl lg:text-5xl uppercase font-bold text-[#022E46] mb-6">
+            Nuestros
+            <span className="bg-gradient-to-r from-[#33CCFF] to-[#209ACE] bg-clip-text text-transparent uppercase"> Resultados</span>
           </h2>
           {/* <p className="text-xl text-[#006699] font-light max-w-3xl mx-auto">
             Somos más que un proveedor de tecnología. Somos tu socio estratégico
@@ -51,36 +52,54 @@ const WhyChooseUs = () => {
         </div>
 
         <div className="mt-16 text-center">
-          <div className="inline-flex flex-col md:flex-row items-center gap-6 md:gap-8 bg-white rounded-2xl px-6 md:px-8 py-6 shadow-lg">
-            <div className="text-center">
-              <div className="text-2xl font-bold text-[#006699] mb-1 leading-none">+890 <br /><span className="text-1xl">MILLONES</span></div>
-              <div className="text-gray-600 text-sm">Mensuales en transacciones soportados en nuestros sistemas</div>
-            </div>
+  <div className="flex flex-col md:flex-row items-center justify-center bg-white rounded-2xl px-6 md:px-8 py-6 shadow-lg divide-y md:divide-y-0 md:divide-x divide-gray-200">
+    
+    {/* Item 1 */}
+    <div className="text-center md:basis-1/4 p-4">
+      <div className="text-3xl font-bold text-[#006699] mb-1 leading-none">
+        +890 <br />
+        <span className="text-xl">MILLONES</span>
+      </div>
+      <div className="text-gray-600 text-sm">
+        Mensuales en transacciones soportados en nuestros sistemas
+      </div>
+    </div>
 
-            <div className="hidden md:block w-px h-12 bg-gray-200"></div>
-            <div className="block md:hidden w-full h-px bg-gray-200"></div>
+    {/* Item 2 */}
+    <div className="text-center md:basis-1/4 p-4">
+      <div className="text-3xl font-bold text-[#006699] uppercase mb-1 leading-none">
+        5.000 <br />
+        <span className="text-xl">Usuarios Activos</span>
+      </div>
+      <div className="text-gray-600 text-sm">
+        en plataforma portal de Salud
+      </div>
+    </div>
 
-            <div className="text-center">
-              <div className="text-2xl font-bold text-[#33ccff]  uppercase mb-1 leading-none">5.000 <br />Usuarios activos</div>
-              <div className="text-gray-600 text-sm">en plataforma portal de Salud</div>
-            </div>
+    {/* Item 3 */}
+    <div className="text-center md:basis-1/4 p-4">
+      <div className="text-3xl font-bold text-[#006699] mb-1 leading-none">
+        120 <br />
+        <span className="text-xl">MILLONES</span>
+      </div>
+      <div className="text-gray-600 text-sm">
+        Disminución de riesgo financiero
+      </div>
+    </div>
 
-            <div className="hidden md:block w-px h-12 bg-gray-200"></div>
-            <div className="block md:hidden w-full h-px bg-gray-200"></div>
+    {/* Item 4 */}
+    <div className="text-center md:basis-1/4 p-4">
+      <div className="text-3xl font-bold text-[#006699] mb-1 leading-none">
+        +480 <br />
+        <span className="text-xl">MILLONES</span>
+      </div>
+      <div className="text-gray-600 text-sm">
+        Utilidades hemos aportando a nuestros clientes
+      </div>
+    </div>
+  </div>
+</div>
 
-            <div className="text-center">
-              <div className="text-2xl font-bold text-[#006699] mb-1 leading-none">120 <br />MILLONES</div>
-              <div className="text-gray-600 text-sm">Disminución de riesgo financiero</div>
-            </div>
-            <div className="hidden md:block w-px h-12 bg-gray-200"></div>
-            <div className="block md:hidden w-full h-px bg-gray-200"></div>
-
-            <div className="text-center">
-              <div className="text-2xl font-bold text-[#006699] mb-1 leading-none">+480 <br /> MILLONES</div>
-              <div className="text-gray-600 text-sm">Utilidades hemos aportando a nuestros clientes</div>
-            </div>
-          </div>
-        </div>
 
         {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {reasons.map((reason, index) => (
@@ -105,13 +124,13 @@ const WhyChooseUs = () => {
 
         <div className="mt-16 bg-gradient-to-r from-[#006699] to-[#33CCFF] rounded-3xl p-8 lg:p-12 text-center text-white">
           <h3 className="text-3xl lg:text-4xl font-bold uppercase mb-4">
-            ¿Listo para Transformar tu Negocio?
+            ¿LISTO PARA DAR EL SIGUIENTE PASO EN TU TRANSFORMACIÓN DIGITAL?
           </h3>
           <p className="text-xl mb-8 opacity-90">
-            Únete a más de 100 empresas que ya confían en nosotros
+            Súmate a las empresas que ya están innovando con nuestras soluciones tecnológicas.
           </p>
           <button className="bg-white text-[#006699] px-8 py-4 rounded-full font-bold text-lg hover:shadow-lg hover:scale-105 transition-all duration-300">
-            CTA por definir
+            Conoce nuestras soluciones
           </button>
         </div>
       </div>

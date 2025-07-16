@@ -3,27 +3,27 @@ import { Star, Quote } from "lucide-react";
 
 const Testimonials = () => {
   const testimonials = [
-    {
-      name: "María González",
-      role: "CEO, TechStart Solutions",
-      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=80&h=80&fit=crop&crop=face",
-      content: "Vaala Group transformó completamente nuestro e-commerce. Las ventas aumentaron un 300% en los primeros 6 meses. Su equipo es excepcional.",
-      rating: 5
-    },
-    {
-      name: "Carlos Mendoza",
-      role: "Director de Operaciones, LogiCorp",
-      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=80&h=80&fit=crop&crop=face",
-      content: "El sistema de gestión que desarrollaron nos ayudó a reducir costos operativos en un 60%. La automatización de procesos fue clave para nuestro crecimiento.",
-      rating: 5
-    },
-    {
-      name: "Ana Rodríguez",
-      role: "Fundadora, FoodDelivery Plus",
-      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=80&h=80&fit=crop&crop=face",
-      content: "Nuestra app móvil superó las 50,000 descargas gracias al excelente trabajo de Vaala Group. La UX es perfecta y el soporte técnico inmejorable.",
-      rating: 5
-    }
+    // {
+    //   name: "María González",
+    //   role: "CEO, TechStart Solutions",
+    //   image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=80&h=80&fit=crop&crop=face",
+    //   content: "Vaala Group transformó completamente nuestro e-commerce. Las ventas aumentaron un 300% en los primeros 6 meses. Su equipo es excepcional.",
+    //   rating: 5
+    // },
+    // {
+    //   name: "Carlos Mendoza",
+    //   role: "Director de Operaciones, LogiCorp",
+    //   image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=80&h=80&fit=crop&crop=face",
+    //   content: "El sistema de gestión que desarrollaron nos ayudó a reducir costos operativos en un 60%. La automatización de procesos fue clave para nuestro crecimiento.",
+    //   rating: 5
+    // },
+    // {
+    //   name: "Ana Rodríguez",
+    //   role: "Fundadora, FoodDelivery Plus",
+    //   image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=80&h=80&fit=crop&crop=face",
+    //   content: "Nuestra app móvil superó las 50,000 descargas gracias al excelente trabajo de Vaala Group. La UX es perfecta y el soporte técnico inmejorable.",
+    //   rating: 5
+    // }
   ];
 
   return (
@@ -40,7 +40,7 @@ const Testimonials = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
@@ -71,7 +71,7 @@ const Testimonials = () => {
               </p>
             </div>
           ))}
-        </div>
+        </div> */}
 
         <div className="mt-16 text-center">
           <div className="inline-flex flex-col md:flex-row items-center gap-6 md:gap-8 bg-white rounded-2xl px-6 md:px-8 py-6 shadow-lg">

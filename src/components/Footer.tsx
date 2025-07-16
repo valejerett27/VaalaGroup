@@ -1,6 +1,6 @@
 
 import { Mail, Phone, MapPin, Linkedin, Twitter, Instagram, Facebook, ArrowUp } from "lucide-react";
-import logoVaala from '../img/Negativa_Horizontal_Sin_Fondo.png';
+import logoVaala from '../img/vaala_principal.png';
 
 
 const Footer = () => {
@@ -28,15 +28,13 @@ const Footer = () => {
               className="h-8 lg:h-10 mb-6"
             />
             <p className="text-gray-300 mb-6 leading-relaxed max-w-md">
-              Transformamos ideas en soluciones digitales innovadoras. 
-              Somos tu socio estratégico en la era digital, comprometidos 
-              con impulsar el crecimiento de tu negocio.
+              Transformamos ideas en soluciones digitales innovadoras. Somos tu socio estratégico en la era digital, comprometidos con impulsar el crecimiento de tu negocio.
             </p>
-            
+
             <div className="space-y-3">
               <div className="flex items-center gap-3">
                 <Mail className="text-cyan-400" size={18} />
-                <span className="text-gray-300">contacto@vaalagroup.com</span>
+                <span className="text-gray-300">comunicaciones@vaalagroup.cl</span>
               </div>
               {/* <div className="flex items-center gap-3">
                 <Phone className="text-cyan-400" size={18} />
@@ -75,11 +73,13 @@ const Footer = () => {
           {/* Services */}
           <div>
             <h4 className="text-lg font-semibold mb-6 text-cyan-400">Servicios</h4>
-            <ul className="space-y-3">
+            <ul className="space-y-1">
               {[
-                "Por Definir",
-                "Por Definir",
-                "Por Definir"
+                "Consultoría",
+                "Desarrollo de Sistemas",
+                "Implementación y Optimización de Procesos",
+                "Soporte",
+                "Capacitación"
               ].map((service) => (
                 <li key={service}>
                   <span className="text-gray-300 hover:text-cyan-400 transition-colors duration-200 cursor-pointer">

@@ -21,13 +21,13 @@ const Hero = () => {
             SOLUCIÓN E INNOVACIÓN
 
 
-            <span className="block bg-gradient-to-r from-[#33CCFF] to-[#006699] bg-clip-text text-transparent">
+            <span className="block bg-gradient-to-r from-[#33CCFF] to-[#209ACE] font-extrabold bg-clip-text text-transparent">
               TECNOLÓGICA
             </span>
 
           </h1>
 
-          <p className="text-xl sm:text-2xl text-gray-200 font-light mb-8 max-w-2xl mx-auto leading-none">
+          <p className="text-xl sm:text-2xl text-gray-200 font-medium mb-8 max-w-2xl mx-auto leading-none">
             Transformamos ideas en sistemas tecnológicos que suman valor, orden y eficiencia a nuestros clientes.
           </p>
 
@@ -52,15 +52,15 @@ const Hero = () => {
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 max-w-4xl mx-auto">
             <div className="text-center">
-              <div className="text-3xl lg:text-4xl font-bold text-[#30E4A2] mb-2">50+</div>
+              <div className="text-3xl lg:text-4xl font-bold text-[#33CCFF] mb-2">50+</div>
               <div className="text-gray-300">Proyectos Exitosos</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl lg:text-4xl font-bold text-[#30E4A2] mb-2">5+</div>
+              <div className="text-3xl lg:text-4xl font-bold text-[#33CCFF] mb-2">6+</div>
               <div className="text-gray-300">Años de Experiencia</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl lg:text-4xl font-bold text-[#30E4A2] mb-2">24/7</div>
+              <div className="text-3xl lg:text-4xl font-bold text-[#33CCFF] mb-2">24/7</div>
               <div className="text-gray-300">Soporte Técnico</div>
             </div>
           </div>

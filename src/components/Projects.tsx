@@ -8,18 +8,18 @@ const Projects = () => {
   const projects = [
   {
     title: "Park by Vaala",
-    category: "Texto por definir",
-    description: "Una Solución tecnológica Integral para la Gestión y Control eficiente de estacionamientos.",
+    category: "Estacionamiento Inteligente",
+    description: "Solución tecnológica para la gestión eficiente, segura y conectada de estacionamientos en entornos urbanos y corporativos.",
     image: parkPrincipal,
-    tags: ["React", "Node.js", "MongoDB", "Stripe"],
+    tags: ["Control de accesos", "Geolocalización", "KPIs en tiempo real", "Seguridad operacional","Gestión automatizada"],
     results: "+2.000 usuarios activos"
   },
   {
     title: "Vaaladev",
-    category: "Texto por definir",
-    description: "Empresa de Desarrollo tecnológico especializada en crear Soluciones Digitales para Clínicas, Hospitales y Centros Médicos",
+    category: "Tecnología en Salud y Servicios",
+    description: "Desarrollamos soluciones digitales personalizadas para mejorar la experiencia y eficiencia en clínicas, hospitales y servicios públicos.",
     image: principalVerde,
-    tags: ["React Native", "Firebase", "Maps API", "Push Notifications"],
+    tags: ["Aplicaciones móviles", "Notificaciones inteligentes", "Infraestructura digital", "Paneles de control", "Sector salud."],
     results: "+3.000 usuarios activos"
   }
 ];
@@ -31,9 +31,9 @@ const Projects = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl uppercase font-bold mb-6">
             Nuestras
-            <span className="bg-gradient-to-r from-[#33CCFF] to-[#006699] bg-clip-text text-transparent"> Unidades</span>
+            <span className="bg-gradient-to-r from-[#33CCFF] to-[#209ACE] bg-clip-text text-transparent"> Unidades</span>
           </h2>
-          <p className="text-xl text-white font-light max-w-3xl mx-auto">
+          <p className="text-xl text-white font-medium max-w-3xl mx-auto">
             Descubre algunos de nuestros casos de éxito que han transformado
             la manera de hacer negocios de nuestros clientes.
           </p>
@@ -43,13 +43,13 @@ const Projects = () => {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="group bg-gray-800 rounded-2xl overflow-hidden hover:shadow-2xl transition-all duration-300 hover:-translate-y-2"
+              className="group bg-[#1F2937] rounded-2xl overflow-hidden hover:shadow-2xl transition-all duration-300 hover:-translate-y-2"
             >
               <div className="relative overflow-hidden">
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="h-48 mx-auto group-hover:scale-110 transition-transform duration-500"
+                  className="h-48 mx-auto p-6 group-hover:scale-110 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent opacity-60"></div>
                 <div className="absolute top-4 left-4">
@@ -57,14 +57,14 @@ const Projects = () => {
                     {project.category}
                   </span>
                 </div>
-                <div className="absolute top-4 right-4 flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                {/* <div className="absolute top-4 right-4 flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <button className="bg-white/20 backdrop-blur-sm p-2 rounded-full hover:bg-white/30 transition-colors">
                     <ExternalLink size={16} />
                   </button>
                   <button className="bg-white/20 backdrop-blur-sm p-2 rounded-full hover:bg-white/30 transition-colors">
                     <Github size={16} />
                   </button>
-                </div>
+                </div> */}
               </div>
               
               <div className="p-8">
@@ -72,7 +72,7 @@ const Projects = () => {
                   {project.title}
                 </h3>
 
-                <p className="text-gray-300 mb-6 uppercase leading-relaxed">
+                <p className="text-gray-300 mb-6  leading-relaxed">
                   {project.description}
                 </p>
                 

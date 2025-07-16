@@ -25,14 +25,14 @@ const Contact = () => {
   };
 
   return (
-    <section id="contacto" className="py-20 bg-gray-900 text-white">
+    <section id="contacto" className="py-20 bg-gray-50 text-[#022E46]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold mb-6">
-            Hablemos de tu
-            <span className="text-[#33CCFF] bg-clip-text "> Proyecto</span>
+            DESARROLLEMOS
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#33CCFF] to-[#209ACE]"> TU IDEA</span>
           </h2>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+          <p className="text-xl font-medium text-[#3F3F3F] max-w-3xl mx-auto">
             Estamos listos para convertir tus ideas en realidad. 
             Contáctanos y descubre cómo podemos impulsar tu negocio.
           </p>
@@ -73,7 +73,7 @@ const Contact = () => {
                     value={formData.email}
                     onChange={handleChange}
                     className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:ring-2 focus:ring-cyan-500 focus:border-transparent text-white placeholder-gray-400"
-                    placeholder="tu@email.com"
+                    placeholder="proyecto@email.com"
                   />
                 </div>
               </div>
@@ -81,7 +81,7 @@ const Contact = () => {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
                   <label htmlFor="company" className="block text-sm font-medium text-gray-300 mb-2">
-                    Empresa
+                    Comuna/Ciudad*
                   </label>
                   <input
                     type="text"
@@ -90,11 +90,26 @@ const Contact = () => {
                     value={formData.company}
                     onChange={handleChange}
                     className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:ring-2 focus:ring-cyan-500 focus:border-transparent text-white placeholder-gray-400"
-                    placeholder="Nombre de tu empresa"
+                    placeholder="Ejemplo: Viña del Mar"
+                  />
+                </div>
+                <div>
+                  <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-2">
+                    Telefono*
+                  </label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                    value={formData.email}
+                    onChange={handleChange}
+                    className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:ring-2 focus:ring-cyan-500 focus:border-transparent text-white placeholder-gray-400"
+                    placeholder="952183542"
                   />
                 </div>
                 
-                <div>
+                {/* <div>
                   <label htmlFor="service" className="block text-sm font-medium text-gray-300 mb-2">
                     Servicio de Interés
                   </label>
@@ -113,9 +128,23 @@ const Contact = () => {
                     <option value="security">Ciberseguridad</option>
                     <option value="automation">Automatización</option>
                   </select>
-                </div>
+                </div> */}
               </div>
-              
+              <div>
+                  <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-2">
+                    Asunto*
+                  </label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                    value={formData.email}
+                    onChange={handleChange}
+                    className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:ring-2 focus:ring-cyan-500 focus:border-transparent text-white placeholder-gray-400"
+                    placeholder="Asunto"
+                  />
+                </div>
               <div>
                 <label htmlFor="message" className="block text-sm font-medium text-gray-300 mb-2">
                   Mensaje *
@@ -144,7 +173,8 @@ const Contact = () => {
 
           {/* Contact Info */}
           <div className="space-y-8">
-            <div className="bg-gradient-to-br from-cyan-600/10 to-blue-600/10 rounded-2xl p-8 border border-cyan-500/20">
+            {/* <div className="bg-gradient-to-br from-cyan-600/10 to-blue-600/10 rounded-2xl p-8 border border-cyan-500/20"> */}
+            <div className="bg-[#112139] rounded-2xl p-8 border border-cyan-500/20">
               <h3 className="text-2xl font-bold mb-6 text-[#33CCFF]">Información de Contacto</h3>
               
               <div className="space-y-6">
@@ -153,7 +183,7 @@ const Contact = () => {
                     <Mail className="text-white" size={20} />
                   </div>
                   <div>
-                    <h4 className="font-semibold mb-1">Email</h4>
+                    <h4 className="font-semibold text-white mb-1">Email</h4>
                     <p className="text-gray-300">contacto@vaalagroup.com</p>
                   </div>
                 </div>
@@ -174,7 +204,7 @@ const Contact = () => {
                     <MapPin className="text-white" size={20} />
                   </div>
                   <div>
-                    <h4 className="font-semibold mb-1">Oficina</h4>
+                    <h4 className="font-semibold text-white mb-1">Oficina</h4>
                     <p className="text-gray-300">
                       Viña del Mar, Chile
                     </p>
@@ -186,7 +216,7 @@ const Contact = () => {
                     <Clock className="text-white" size={20} />
                   </div>
                   <div>
-                    <h4 className="font-semibold mb-1">Horarios de Atención</h4>
+                    <h4 className="font-semibold text-white mb-1">Horarios de Atención</h4>
                     <p className="text-gray-300">Lun - Vie: 9:00 AM - 7:00 PM</p>
                     <p className="text-gray-300">Sáb: 10:00 AM - 2:00 PM</p>
                   </div>
