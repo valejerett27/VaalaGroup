@@ -25,7 +25,7 @@ const Footer = () => {
             <img
               src={logoVaala}
               alt="Vaala Group"
-              className="h-8 lg:h-10 mb-6"
+              className="h-8 lg:h-20 mb-6"
             />
             <p className="text-gray-300 mb-6 leading-relaxed max-w-md">
               Transformamos ideas en soluciones digitales innovadoras. Somos tu socio estratégico en la era digital, comprometidos con impulsar el crecimiento de tu negocio.
@@ -54,7 +54,7 @@ const Footer = () => {
               {[
                 { name: "Inicio", href: "#inicio" },
                 { name: "Servicios", href: "#servicios" },
-                { name: "Proyectos", href: "#proyectos" },
+                { name: "Unidades", href: "#proyectos" },
                 // { name: "Equipo", href: "#equipo" },
                 { name: "Contacto", href: "#contacto" }
               ].map((link) => (

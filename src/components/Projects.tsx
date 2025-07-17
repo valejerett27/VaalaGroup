@@ -6,23 +6,25 @@ import principalVerde from '../img/Principal_verde.png';
 
 const Projects = () => {
   const projects = [
-  {
-    title: "Park by Vaala",
-    category: "Estacionamiento Inteligente",
-    description: "Solución tecnológica para la gestión eficiente, segura y conectada de estacionamientos en entornos urbanos y corporativos.",
-    image: parkPrincipal,
-    tags: ["Control de accesos", "Geolocalización", "KPIs en tiempo real", "Seguridad operacional","Gestión automatizada"],
-    results: "+2.000 usuarios activos"
-  },
-  {
-    title: "Vaaladev",
-    category: "Tecnología en Salud y Servicios",
-    description: "Desarrollamos soluciones digitales personalizadas para mejorar la experiencia y eficiencia en clínicas, hospitales y servicios públicos.",
-    image: principalVerde,
-    tags: ["Aplicaciones móviles", "Notificaciones inteligentes", "Infraestructura digital", "Paneles de control", "Sector salud."],
-    results: "+3.000 usuarios activos"
-  }
-];
+    {
+      title: "Park by Vaala",
+      category: "Estacionamiento Inteligente",
+      description: "Solución tecnológica para la gestión eficiente, segura y conectada de estacionamientos en entornos urbanos y corporativos.",
+      image: parkPrincipal,
+      tags: ["Control de accesos", "Geolocalización", "KPIs en tiempo real", "Seguridad operacional", "Gestión automatizada"],
+      results: "+2.000 usuarios activos",
+      link: ""
+    },
+    {
+      title: "Vaaladev",
+      category: "Tecnología en Salud y Servicios",
+      description: "Desarrollamos soluciones digitales personalizadas para mejorar la experiencia y eficiencia en clínicas, hospitales y servicios públicos.",
+      image: principalVerde,
+      tags: ["Aplicaciones móviles", "Notificaciones inteligentes", "Infraestructura digital", "Paneles de control", "Sector salud."],
+      results: "+3.000 usuarios activos",
+      link: "https://vaaladev.cl/home"
+    }
+  ];
 
 
   return (
@@ -66,7 +68,7 @@ const Projects = () => {
                   </button>
                 </div> */}
               </div>
-              
+
               <div className="p-8">
                 <h3 className="text-2xl font-bold mb-3 group-hover:text-cyan-400 transition-colors">
                   {project.title}
@@ -75,7 +77,7 @@ const Projects = () => {
                 <p className="text-gray-300 mb-6  leading-relaxed">
                   {project.description}
                 </p>
-                
+
                 <div className="flex flex-wrap gap-2 mb-6">
                   {project.tags.map((tag, idx) => (
                     <span
@@ -86,15 +88,21 @@ const Projects = () => {
                     </span>
                   ))}
                 </div>
-                
+
                 <div className="flex items-center justify-between">
                   <div className="text-cyan-400 font-bold text-lg">
                     {project.results}
                   </div>
-                  <button className="text-gray-400 hover:text-white transition-colors duration-200 flex items-center gap-2">
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gray-400 hover:text-white transition-colors duration-200 flex items-center gap-2"
+                  >
                     Ir a la página
                     <span className="transition-transform group-hover:translate-x-1">→</span>
-                  </button>
+                  </a>
+
                 </div>
               </div>
             </div>
