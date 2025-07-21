@@ -1,20 +1,31 @@
-
 import { Send } from "lucide-react";
 import { useState } from "react";
-import iconMail from '../img/CONTACTO-CORREO.png';
-import iconOffice from '../img/CONTACTO-OFICINA.png'
-import iconSupport from '../img/CONTACTO-SOPORTE.png';
+import iconMail from "../img/CONTACTO-CORREO.png";
+import iconOffice from "../img/CONTACTO-OFICINA.png";
+import iconSupport from "../img/CONTACTO-SOPORTE.png";
+import { motion } from "framer-motion";
+import emailjs from '@emailjs/browser';
 
+
+interface FormData {
+  name: string;
+  email: string;
+  city: string;
+  phone: string;
+  asunto: string;
+  message: string;
+}
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
+  const [formData, setFormData] = useState<FormData>({
     name: "",
     email: "",
     city: "",
     phone: "",
     asunto: "",
-    message: ""
+    message: "",
   });
+
   const [formSent, setFormSent] = useState(false);
   const [showAlert, setShowAlert] = useState(false);
   const [alertType, setAlertType] = useState<"success" | "error">("success");
@@ -45,8 +56,6 @@ const Contact = () => {
     return Object.keys(newErrors).length === 0;
   };
 
-
-
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
@@ -59,8 +68,50 @@ const Contact = () => {
       return;
     }
 
-    // Aquí simulas envío exitoso (puedes agregar fetch o EmailJS después)
-    console.log("Formulario Enviado:", formData);
+    emailjs
+      .send(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+        {
+          name: formData.name,
+          email: formData.email,
+          city: formData.city,
+          phone: formData.phone,
+          asunto: formData.asunto,
+          message: formData.message,
+          date: new Date().toLocaleString("es-CL"),
+        },
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+      )
+      .then(
+        () => {
+          setAlertType("success");
+          setFormSent(true);
+          setShowAlert(true);
+          setTimeout(() => setShowAlert(false), 3500);
+          setTimeout(() => {
+            setFormSent(false);
+            setFormData({
+              name: "",
+              email: "",
+              city: "",
+              phone: "",
+              asunto: "",
+              message: "",
+            });
+            setErrors({});
+          }, 4000);
+        },
+        (error) => {
+          console.error("Error al enviar correo:", error);
+          setAlertType("error");
+          setFormSent(true);
+          setShowAlert(true);
+          setTimeout(() => setShowAlert(false), 3500);
+          setTimeout(() => setFormSent(false), 4000);
+        }
+      );
+
 
     setAlertType("success");
     setFormSent(true);
@@ -75,52 +126,72 @@ const Contact = () => {
         city: "",
         phone: "",
         asunto: "",
-        message: ""
+        message: "",
       });
       setErrors({});
     }, 4000);
   };
 
-
-
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     setFormData({
       ...formData,
-      [e.target.name]: e.target.value
+      [e.target.name]: e.target.value,
     });
   };
 
   return (
-    <section id="contacto" className="py-20 bg-gray-50 text-[#022E46]">
+    <section id="contacto" className="py-20 bg-gray-50 text-[#022E46] font-['Work_Sans']">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold mb-6">
-            DESARROLLEMOS
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#33CCFF] to-[#209ACE]"> TU IDEA</span>
+        <motion.div
+          className="text-center mb-16"
+          initial={{ opacity: 0, y: -40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+        >
+          <h2 className="text-4xl lg:text-5xl font-extrabold mb-6">
+            DESARROLLEMOS{" "}
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#33CCFF] to-[#209ACE]">
+              TU IDEA
+            </span>
           </h2>
-          <p className="text-xl font-medium text-[#3F3F3F] max-w-3xl mx-auto">
-            Estamos listos para convertir tus ideas en realidad.
-            Contáctanos y descubre cómo podemos impulsar tu negocio.
+          <p className="text-md lg:text-xl px-4 lg:px-0 font-medium text-[#3F3F3F] max-w-3xl mx-auto">
+            Estamos listos para convertir tus ideas en realidad. Contáctanos y
+            descubre cómo podemos impulsar tu negocio.
           </p>
-        </div>
+        </motion.div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-          {/* Contact Form */}
-          <div className="bg-gray-800 rounded-2xl p-8">
-            <h3 className="text-2xl font-bold mb-6 text-[#33CCFF]">Solicita una Consulta Gratuita</h3>
+          {/* Formulario */}
+          <motion.div
+            className="bg-gray-800 rounded-2xl p-8"
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+          >
+            <h3 className="text-2xl font-bold mb-6 text-[#33CCFF]">
+              Solicita una Consulta Gratuita
+            </h3>
 
             {formSent && (
-              <div
-                className={`mb-6 transition-all duration-500 ease-in-out ${showAlert ? 'opacity-100 scale-100' : 'opacity-0 scale-95'
+              <motion.div
+                className={`mb-6 transition-all duration-500 ease-in-out ${showAlert ? "opacity-100 scale-100" : "opacity-0 scale-95"
                   }`}
+                initial={{ opacity: 0, y: -20 }}
+                animate={{ opacity: showAlert ? 1 : 0, y: showAlert ? 0 : -20 }}
               >
-                <div className={`relative px-6 py-4 rounded-lg shadow-lg text-center font-semibold max-w-md mx-auto ${alertType === "success" ? "bg-green-600 text-white" : "bg-red-600 text-white"
-                  }`}>
+                <div
+                  className={`relative px-6 py-4 rounded-lg shadow-lg text-center font-semibold max-w-md mx-auto ${alertType === "success"
+                      ? "bg-green-600 text-white"
+                      : "bg-red-600 text-white"
+                    }`}
+                >
                   {alertType === "success"
                     ? "✅ ¡Formulario enviado correctamente!"
                     : "❌ Hubo un problema, revisa los campos."}
-
                   <button
                     onClick={() => {
                       setShowAlert(false);
@@ -132,190 +203,136 @@ const Contact = () => {
                     ×
                   </button>
                 </div>
-              </div>
+              </motion.div>
             )}
 
-
             <form onSubmit={handleSubmit} className="space-y-6">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-2">
-                    Nombre Completo *
-                  </label>
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    required
-                    value={formData.name}
-                    onChange={handleChange}
-                    className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:ring-2 focus:ring-cyan-500 focus:border-transparent text-white placeholder-gray-400"
-                    placeholder="Tu nombre"
-                  />
-                  {errors.name && <p className="text-sm text-red-400 mt-1">{errors.name}</p>}
-
-                </div>
-
-                <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-2">
-                    Email *
-                  </label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    required
-                    value={formData.email}
-                    onChange={handleChange}
-                    className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:ring-2 focus:ring-cyan-500 focus:border-transparent text-white placeholder-gray-400"
-                    placeholder="proyecto@email.com"
-                  />
-                  {errors.email && <p className="text-sm text-red-400 mt-1">{errors.email}</p>}
-                </div>
+              <div>
+                <label className="block text-sm text-white mb-2">Nombre *</label>
+                <input
+                  type="text"
+                  name="name"
+                  value={formData.name}
+                  onChange={handleChange}
+                  className="w-full px-4 py-3 rounded bg-gray-700 text-white border border-gray-600"
+                />
+                {errors.name && (
+                  <p className="text-red-400 text-sm mt-1">{errors.name}</p>
+                )}
               </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <label className="block text-sm text-white mb-2">Email *</label>
+                <input
+                  type="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
+                  className="w-full px-4 py-3 rounded bg-gray-700 text-white border border-gray-600"
+                />
+                {errors.email && (
+                  <p className="text-red-400 text-sm mt-1">{errors.email}</p>
+                )}
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div>
-                  <label htmlFor="city" className="block text-sm font-medium text-gray-300 mb-2">
-                    Comuna/Ciudad*
-                  </label>
+                  <label className="block text-sm text-white mb-2">Ciudad *</label>
                   <input
                     type="text"
-                    id="city"
                     name="city"
                     value={formData.city}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:ring-2 focus:ring-cyan-500 focus:border-transparent text-white placeholder-gray-400"
-                    placeholder="Ejemplo: Viña del Mar"
+                    className="w-full px-4 py-3 rounded bg-gray-700 text-white border border-gray-600"
                   />
-                  {errors.city && <p className="text-sm text-red-400 mt-1">{errors.city}</p>}
+                  {errors.city && (
+                    <p className="text-red-400 text-sm mt-1">{errors.city}</p>
+                  )}
                 </div>
                 <div>
-                  <label htmlFor="phone" className="block text-sm font-medium text-gray-300 mb-2">
-                    Telefono*
-                  </label>
+                  <label className="block text-sm text-white mb-2">Teléfono *</label>
                   <input
-                    type="tel"
-                    id="phone"
+                    type="text"
                     name="phone"
-                    required
                     value={formData.phone}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:ring-2 focus:ring-cyan-500 focus:border-transparent text-white placeholder-gray-400"
-                    placeholder="952183542"
+                    className="w-full px-4 py-3 rounded bg-gray-700 text-white border border-gray-600"
                   />
-                  {errors.phone && <p className="text-sm text-red-400 mt-1">{errors.phone}</p>}
+                  {errors.phone && (
+                    <p className="text-red-400 text-sm mt-1">{errors.phone}</p>
+                  )}
                 </div>
-
-                {/* <div>
-                  <label htmlFor="service" className="block text-sm font-medium text-gray-300 mb-2">
-                    Servicio de Interés
-                  </label>
-                  <select
-                    id="service"
-                    name="service"
-                    value={formData.service}
-                    onChange={handleChange}
-                    className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:ring-2 focus:ring-cyan-500 focus:border-transparent text-white"
-                  >
-                    <option value="">Seleccionar servicio</option>
-                    <option value="web">Desarrollo Web</option>
-                    <option value="mobile">Apps Móviles</option>
-                    <option value="ecommerce">E-commerce</option>
-                    <option value="data">Big Data & Analytics</option>
-                    <option value="security">Ciberseguridad</option>
-                    <option value="automation">Automatización</option>
-                  </select>
-                </div> */}
               </div>
+
               <div>
-                <label htmlFor="asunto" className="block text-sm font-medium text-gray-300 mb-2">
-                  Asunto*
-                </label>
+                <label className="block text-sm text-white mb-2">Asunto *</label>
                 <input
                   type="text"
-                  id="asunto"
                   name="asunto"
-                  required
                   value={formData.asunto}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:ring-2 focus:ring-cyan-500 focus:border-transparent text-white placeholder-gray-400"
-                  placeholder="Asunto"
+                  className="w-full px-4 py-3 rounded bg-gray-700 text-white border border-gray-600"
                 />
-                {errors.asunto && <p className="text-sm text-red-400 mt-1">{errors.asunto}</p>}
+                {errors.asunto && (
+                  <p className="text-red-400 text-sm mt-1">{errors.asunto}</p>
+                )}
               </div>
+
               <div>
-                <label htmlFor="message" className="block text-sm font-medium text-gray-300 mb-2">
-                  Mensaje *
-                </label>
+                <label className="block text-sm text-white mb-2">Mensaje *</label>
                 <textarea
-                  id="message"
                   name="message"
-                  required
-                  rows={5}
                   value={formData.message}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:ring-2 focus:ring-cyan-500 focus:border-transparent text-white placeholder-gray-400 resize-none"
-                  placeholder="Cuéntanos sobre tu proyecto..."
+                  rows={4}
+                  className="w-full px-4 py-3 rounded bg-gray-700 text-white border border-gray-600 resize-none"
                 />
-                {errors.message && <p className="text-sm text-red-400 mt-1">{errors.message}</p>}
+                {errors.message && (
+                  <p className="text-red-400 text-sm mt-1">{errors.message}</p>
+                )}
               </div>
 
               <button
                 type="submit"
                 className="w-full bg-gradient-to-r from-[#006699] to-[#33CCFF] text-white px-8 py-4 rounded-lg font-semibold hover:shadow-lg hover:scale-105 transition-all duration-300 flex items-center justify-center gap-2"
               >
-
                 Enviar Solicitud
                 <Send size={20} />
               </button>
             </form>
-          </div>
+          </motion.div>
 
-          {/* Contact Info */}
-          <div className="space-y-8">
-            {/* <div className="bg-gradient-to-br from-cyan-600/10 to-blue-600/10 rounded-2xl p-8 border border-cyan-500/20"> */}
-            <div className="bg-[#112139] rounded-2xl p-8 border border-cyan-500/20">
-              <h3 className="text-2xl font-bold mb-6 text-[#33CCFF]">Información de Contacto</h3>
-
+          {/* Información de contacto */}
+          <motion.div
+            className="space-y-8"
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+          >
+            <div className="bg-[#112139] rounded-2xl px-3 md:px-8 py-8 border border-cyan-500/20">
+              <h3 className="text-2xl font-bold mb-6 text-[#33CCFF]">
+                Información de Contacto
+              </h3>
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
-                  <div className="">
-                    <img src={iconMail} alt="Email" className="text-white w-[50px]" />
-                  </div>
+                  <img src={iconMail} alt="Email" className="min-w-[50px] w-[50px]" />
                   <div>
                     <h4 className="font-semibold text-white mb-1">Email</h4>
                     <p className="text-gray-300">comunicaciones@vaalagroup.cl</p>
                   </div>
                 </div>
 
-                {/* <div className="flex items-start gap-4">
-                  <div className="bg-[#33CCFF] p-3 rounded-lg">
-                    <Phone className="text-white" size={20} />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold mb-1">Teléfono</h4>
-                    <p className="text-gray-300">+52 (55) 1234-5678</p>
-                    <p className="text-gray-300">+1 (555) 987-6543</p>
-                  </div>
-                </div> */}
-
                 <div className="flex items-start gap-4">
-                  <div className="">
-                    <img src={iconOffice} alt="Oficina" className="text-white w-[50px]" />
-                  </div>
+                  <img src={iconOffice} alt="Oficina" className="w-[50px]" />
                   <div>
                     <h4 className="font-semibold text-white mb-1">Oficina</h4>
-                    <p className="text-gray-300">
-                      Viña del Mar, Chile
-                    </p>
+                    <p className="text-gray-300">Viña del Mar, Chile</p>
                   </div>
                 </div>
 
                 <div className="flex items-start gap-4">
-                  <div className="">
-                    <img src={iconSupport} alt="Soporte" className="text-white w-[50px]" />
-                  </div>
+                  <img src={iconSupport} alt="Soporte" className="w-[50px]" />
                   <div>
                     <h4 className="font-semibold text-white mb-1">Horarios de Atención</h4>
                     <p className="text-gray-300">Lun - Vie: 9:00 AM - 7:00 PM</p>
@@ -324,18 +341,7 @@ const Contact = () => {
                 </div>
               </div>
             </div>
-
-            {/* <div className="bg-gradient-to-br from-blue-600/10 to-purple-600/10 rounded-2xl p-8 border border-blue-500/20">
-              <h3 className="text-xl font-bold mb-4 text-blue-400">¿Prefieres una Reunión Virtual?</h3>
-              <p className="text-gray-300 mb-6">
-                Agenda una videollamada gratuita de 30 minutos para discutir tu proyecto en detalle.
-              </p>
-              <button className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors duration-200 flex items-center gap-2">
-                <Calendar size={18} />
-                Agendar Reunión
-              </button>
-            </div> */}
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

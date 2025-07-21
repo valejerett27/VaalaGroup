@@ -31,11 +31,11 @@ const Projects = () => {
     <section id="proyectos" className="py-20 bg-gray-900 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl uppercase font-bold mb-6">
+          <h2 className="text-4xl lg:text-5xl uppercase font-extrabold mb-6">
             Nuestras
             <span className="bg-gradient-to-r from-[#33CCFF] to-[#209ACE] bg-clip-text text-transparent"> Unidades</span>
           </h2>
-          <p className="text-xl text-white font-medium max-w-3xl mx-auto">
+          <p className="text-md lg:text-xl px-4 lg:px-0 text-white font-medium max-w-3xl mx-auto">
             Descubre algunos de nuestros casos de éxito que han transformado
             la manera de hacer negocios de nuestros clientes.
           </p>

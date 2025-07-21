@@ -16,7 +16,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-gray-900 text-white relative">
+    <footer className="bg-[#022E46] text-white relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Main Footer Content */}
         <div className="py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -25,7 +25,7 @@ const Footer = () => {
             <img
               src={logoVaala}
               alt="Vaala Group"
-              className="h-8 lg:h-20 mb-6"
+              className="h-20 mb-6"
             />
             <p className="text-gray-300 mb-6 leading-relaxed max-w-md">
               Transformamos ideas en soluciones digitales innovadoras. Somos tu socio estratégico en la era digital, comprometidos con impulsar el crecimiento de tu negocio.
@@ -115,11 +115,11 @@ const Footer = () => {
         <div className="py-8 border-t border-gray-800 flex flex-col lg:flex-row items-center justify-between gap-6">
           <div className="text-gray-400 text-center lg:text-left">
             <p>&copy; 2025 Vaala Group. Todos los derechos reservados.</p>
-            <div className="flex gap-6 mt-2 justify-center lg:justify-start">
+            {/* <div className="flex gap-6 mt-2 justify-center lg:justify-start">
               <a href="#" className="hover:text-cyan-400 transition-colors text-sm">Política de Privacidad</a>
               <a href="#" className="hover:text-cyan-400 transition-colors text-sm">Términos de Servicio</a>
               <a href="#" className="hover:text-cyan-400 transition-colors text-sm">Cookies</a>
-            </div>
+            </div> */}
           </div>
 
           <div className="flex items-center gap-4">

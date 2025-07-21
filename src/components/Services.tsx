@@ -50,11 +50,11 @@ const Services = () => {
     <section id="servicios" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl uppercase font-bold text-[#022E46] mb-6">
+          <h2 className="text-4xl lg:text-5xl uppercase font-extrabold text-[#022E46] mb-6">
             Nuestros
             <span className="bg-gradient-to-r from-[#33CCFF] to-[#209ACE] bg-clip-text text-transparent uppercase"> Servicios</span>
           </h2>
-          <p className="text-xl text-[#3F3F3F] font-medium max-w-3xl mx-auto">
+          <p className="text-md lg:text-xl px-4 lg:px-0 text-[#3F3F3F]  font-medium max-w-3xl mx-auto">
             Cada uno de nuestros servicios se adapta a las necesidades del cliente y al contexto de su industria.
           </p>
         </div>

@@ -41,9 +41,9 @@ const Navigation = () => {
           : "bg-transparent"
       }`}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto ">
         <div className="flex justify-between items-center h-16 lg:h-20">
-          <div className="flex-shrink-0">
+          <div className="flex-shrink-0 pl-3">
             <img
               src={logoVaala}
               alt="Vaala Group"
@@ -75,7 +75,7 @@ const Navigation = () => {
           <div className="lg:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-gray-700 hover:text-cyan-600 p-2"
+              className="text-white pr-3 hover:text-cyan-600 p-2"
             >
               {isOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
@@ -84,13 +84,13 @@ const Navigation = () => {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="lg:hidden bg-white/95 backdrop-blur-lg border-t border-cyan-100">
+          <div className="lg:hidden bg-white/95 backdrop-blur-lg h-screen border-t border-cyan-100">
             <div className="px-2 pt-2 pb-3 space-y-1">
               {navItems.map((item) => (
                 <button
                   key={item.name}
                   onClick={() => scrollToSection(item.href)}
-                  className="block w-full text-left px-3 py-2 text-base font-medium text-gray-700 hover:text-cyan-600 hover:bg-cyan-50 rounded-md transition-colors duration-200"
+                  className="block w-full text-left px-3 py-2 text-base font-medium text-white hover:text-cyan-600 hover:bg-cyan-50 rounded-md transition-colors duration-200"
                 >
                   {item.name}
                 </button>

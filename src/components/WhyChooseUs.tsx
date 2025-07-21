@@ -41,7 +41,7 @@ const WhyChooseUs = () => {
       
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl uppercase font-bold text-[#022E46] mb-6">
+          <h2 className="text-4xl lg:text-5xl uppercase font-extrabold text-[#022E46] mb-6">
             Nuestros
             <span className="bg-gradient-to-r from-[#33CCFF] to-[#209ACE] bg-clip-text text-transparent uppercase"> Resultados</span>
           </h2>
@@ -123,10 +123,10 @@ const WhyChooseUs = () => {
         </div> */}
 
         <div className="mt-16 bg-gradient-to-r from-[#006699] to-[#33CCFF] rounded-3xl p-8 lg:p-12 text-center text-white">
-          <h3 className="text-3xl lg:text-4xl font-bold uppercase mb-4">
+          <h3 className="text-2xl lg:text-3xl lg:text-4xl font-bold uppercase mb-4">
             ¿LISTO PARA DAR EL SIGUIENTE PASO EN TU TRANSFORMACIÓN DIGITAL?
           </h3>
-          <p className="text-xl mb-8 opacity-90">
+          <p className="text-md lg:text-xl px-4 lg:px-0 mb-8 opacity-90">
             Súmate a las empresas que ya están innovando con nuestras soluciones tecnológicas.
           </p>
           <button className="bg-white text-[#006699] px-8 py-4 rounded-full font-bold text-lg hover:shadow-lg hover:scale-105 transition-all duration-300">

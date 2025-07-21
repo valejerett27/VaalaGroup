@@ -11,12 +11,12 @@ const Hero = () => {
   };
 
   return (
-    <section id="inicio" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section id="inicio" className="relative min-h-screen pb-24 flex items-center justify-center overflow-hidden">
       <AnimatedBackground />
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div className="relative z-10 max-w-7xl mx-auto p-4 sm:p-6 lg:p-8 text-center">
         <div className="animate-fade-in">
-          <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold text-white mt-20
+          <h1 className="text-4xl sm:text-5xl lg:text-7xl font-extrabold text-white mt-20
            mb-6 leading-tight">
             SOLUCIÓN E INNOVACIÓN
 
