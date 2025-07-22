@@ -38,7 +38,7 @@ const WhyChooseUs = () => {
   return (
     <section className="py-20 bg-white relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-br from-cyan-50 to-blue-50 opacity-50"></div>
-      
+
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl uppercase font-extrabold text-[#022E46] mb-6">
@@ -52,53 +52,53 @@ const WhyChooseUs = () => {
         </div>
 
         <div className="mt-16 text-center">
-  <div className="flex flex-col md:flex-row items-center justify-center bg-white rounded-2xl px-6 md:px-8 py-6 shadow-lg divide-y md:divide-y-0 md:divide-x divide-gray-200">
-    
-    {/* Item 1 */}
-    <div className="text-center md:basis-1/4 p-4">
-      <div className="text-3xl font-bold text-[#006699] mb-1 leading-none">
-        +890 <br />
-        <span className="text-xl">MILLONES</span>
-      </div>
-      <div className="text-gray-600 text-sm">
-        Mensuales en transacciones soportados en nuestros sistemas
-      </div>
-    </div>
+          <div className="flex flex-col md:flex-row items-start justify-center bg-white rounded-2xl px-6 md:px-8 py-6 shadow-lg divide-y md:divide-y-0 md:divide-x divide-gray-200">
 
-    {/* Item 2 */}
-    <div className="text-center md:basis-1/4 p-4">
-      <div className="text-3xl font-bold text-[#006699] uppercase mb-1 leading-none">
-        5.000 <br />
-        <span className="text-xl">Usuarios Activos</span>
-      </div>
-      <div className="text-gray-600 text-sm">
-        en plataforma portal de Salud
-      </div>
-    </div>
+            {/* Item 1 */}
+            <div className="text-center md:basis-1/4 p-4">
+              <div className="text-3xl font-bold text-[#006699] mb-3 leading-none">
+                +890
+                <span className="text-xl block">MILLONES</span>
+              </div>
+              <div className="text-gray-600 text-sm">
+                Mensuales en transacciones soportados en nuestros sistemas
+              </div>
+            </div>
 
-    {/* Item 3 */}
-    <div className="text-center md:basis-1/4 p-4">
-      <div className="text-3xl font-bold text-[#006699] mb-1 leading-none">
-        120 <br />
-        <span className="text-xl">MILLONES</span>
-      </div>
-      <div className="text-gray-600 text-sm">
-        Disminución de riesgo financiero
-      </div>
-    </div>
+            {/* Item 2 */}
+            <div className="text-center md:basis-1/4 p-4">
+              <div className="text-3xl font-bold text-[#006699] uppercase mb-3 leading-none">
+                5.000
+                <span className="text-xl block">Usuarios Activos</span>
+              </div>
+              <div className="text-gray-600 text-sm">
+                en plataforma portal de Salud
+              </div>
+            </div>
 
-    {/* Item 4 */}
-    <div className="text-center md:basis-1/4 p-4">
-      <div className="text-3xl font-bold text-[#006699] mb-1 leading-none">
-        +480 <br />
-        <span className="text-xl">MILLONES</span>
-      </div>
-      <div className="text-gray-600 text-sm">
-        Utilidades hemos aportando a nuestros clientes
-      </div>
-    </div>
-  </div>
-</div>
+            {/* Item 3 */}
+            <div className="text-center md:basis-1/4 p-4">
+              <div className="text-3xl font-bold text-[#006699] mb-3 leading-none">
+                120
+                <span className="text-xl block">MILLONES</span>
+              </div>
+              <div className="text-gray-600 text-sm">
+                Disminución de riesgo financiero
+              </div>
+            </div>
+
+            {/* Item 4 */}
+            <div className="text-center md:basis-1/4 p-4">
+              <div className="text-3xl font-bold text-[#006699] mb-3 leading-none">
+                +480
+                <span className="text-xl block">MILLONES</span>
+              </div>
+              <div className="text-gray-600 text-sm">
+                Utilidades hemos aportando a nuestros clientes
+              </div>
+            </div>
+          </div>
+        </div>
 
 
         {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -129,9 +129,11 @@ const WhyChooseUs = () => {
           <p className="text-md lg:text-xl px-4 lg:px-0 mb-8 opacity-90">
             Súmate a las empresas que ya están innovando con nuestras soluciones tecnológicas.
           </p>
-          <button className="bg-white text-[#006699] px-8 py-4 rounded-full font-bold text-lg hover:shadow-lg hover:scale-105 transition-all duration-300">
-            Conoce nuestras soluciones
-          </button>
+          <a href="#contacto">
+            <button className="bg-white text-[#006699] px-8 py-4 rounded-full font-bold text-lg hover:shadow-lg hover:scale-105 transition-all duration-300">
+              Conoce nuestras soluciones
+            </button>
+          </a>
         </div>
       </div>
     </section>

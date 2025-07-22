@@ -84,20 +84,20 @@ const Navigation = () => {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="lg:hidden bg-white/95 backdrop-blur-lg h-screen border-t border-cyan-100">
+          <div className="lg:hidden bg-white/95 backdrop-blur-lg h-screen border-t border-[#33CCFF]">
             <div className="px-2 pt-2 pb-3 space-y-1">
               {navItems.map((item) => (
                 <button
                   key={item.name}
                   onClick={() => scrollToSection(item.href)}
-                  className="block w-full text-left px-3 py-2 text-base font-medium text-white hover:text-cyan-600 hover:bg-cyan-50 rounded-md transition-colors duration-200"
+                  className="block w-full text-left px-3 py-2 text-base font-medium text-[#006699] hover:text-[#33CCFF] hover:bg-[#006699] rounded-md transition-colors duration-200"
                 >
                   {item.name}
                 </button>
               ))}
               <button
                 onClick={() => scrollToSection("#contacto")}
-                className="w-full mt-4 bg-gradient-to-r from-cyan-600 to-blue-600 text-white px-6 py-2 rounded-full hover:shadow-lg transition-all duration-200"
+                className="w-full mt-4 bg-gradient-to-r from-[#33CCFF] to-[#006699] text-white px-6 py-2 rounded-full hover:shadow-lg transition-all duration-200"
               >
                 Contáctanos
               </button>

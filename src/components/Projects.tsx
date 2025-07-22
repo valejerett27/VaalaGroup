@@ -8,7 +8,7 @@ const Projects = () => {
   const projects = [
     {
       title: "Park by Vaala",
-      category: "Estacionamiento Inteligente",
+      category: "Estacionamientos Inteligentes",
       description: "Solución tecnológica para la gestión eficiente, segura y conectada de estacionamientos en entornos urbanos y corporativos.",
       image: parkPrincipal,
       tags: ["Control de accesos", "Geolocalización", "KPIs en tiempo real", "Seguridad operacional", "Gestión automatizada"],

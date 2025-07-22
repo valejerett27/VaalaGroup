@@ -142,7 +142,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contacto" className="py-20 bg-gray-50 text-[#022E46] font-['Work_Sans']">
+    <section id="contacto" className="py-20 bg-[#022E46] text-[#022E46] font-['Work_Sans']">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           className="text-center mb-16"
@@ -151,13 +151,13 @@ const Contact = () => {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-4xl lg:text-5xl font-extrabold mb-6">
+          <h2 className="text-4xl lg:text-5xl text-white font-extrabold mb-6">
             DESARROLLEMOS{" "}
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#33CCFF] to-[#209ACE]">
               TU IDEA
             </span>
           </h2>
-          <p className="text-md lg:text-xl px-4 lg:px-0 font-medium text-[#3F3F3F] max-w-3xl mx-auto">
+          <p className="text-md lg:text-xl  px-4 lg:px-0 font-medium text-gray-300 max-w-3xl mx-auto">
             Estamos listos para convertir tus ideas en realidad. Contáctanos y
             descubre cómo podemos impulsar tu negocio.
           </p>
@@ -176,35 +176,7 @@ const Contact = () => {
               Solicita una Consulta Gratuita
             </h3>
 
-            {formSent && (
-              <motion.div
-                className={`mb-6 transition-all duration-500 ease-in-out ${showAlert ? "opacity-100 scale-100" : "opacity-0 scale-95"
-                  }`}
-                initial={{ opacity: 0, y: -20 }}
-                animate={{ opacity: showAlert ? 1 : 0, y: showAlert ? 0 : -20 }}
-              >
-                <div
-                  className={`relative px-6 py-4 rounded-lg shadow-lg text-center font-semibold max-w-md mx-auto ${alertType === "success"
-                      ? "bg-green-600 text-white"
-                      : "bg-red-600 text-white"
-                    }`}
-                >
-                  {alertType === "success"
-                    ? "✅ ¡Formulario enviado correctamente!"
-                    : "❌ Hubo un problema, revisa los campos."}
-                  <button
-                    onClick={() => {
-                      setShowAlert(false);
-                      setTimeout(() => setFormSent(false), 300);
-                    }}
-                    className="absolute top-2 right-3 text-white hover:text-gray-200 text-xl font-bold"
-                    aria-label="Cerrar alerta"
-                  >
-                    ×
-                  </button>
-                </div>
-              </motion.div>
-            )}
+            
 
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
@@ -300,6 +272,35 @@ const Contact = () => {
                 <Send size={20} />
               </button>
             </form>
+            {formSent && (
+              <motion.div
+                className={`mb-6 transition-all duration-500 ease-in-out ${showAlert ? "opacity-100 scale-100" : "opacity-0 scale-95"
+                  }`}
+                initial={{ opacity: 0, y: -20 }}
+                animate={{ opacity: showAlert ? 1 : 0, y: showAlert ? 0 : -20 }}
+              >
+                <div
+                  className={`relative px-6 py-4 rounded-lg shadow-lg text-center font-semibold max-w-md mx-auto ${alertType === "success"
+                      ? "bg-green-600 text-white"
+                      : "bg-red-600 text-white"
+                    }`}
+                >
+                  {alertType === "success"
+                    ? "✅ ¡Formulario enviado correctamente!"
+                    : "❌ Hubo un problema, revisa los campos."}
+                  <button
+                    onClick={() => {
+                      setShowAlert(false);
+                      setTimeout(() => setFormSent(false), 300);
+                    }}
+                    className="absolute top-2 right-3 text-white hover:text-gray-200 text-xl font-bold"
+                    aria-label="Cerrar alerta"
+                  >
+                    ×
+                  </button>
+                </div>
+              </motion.div>
+            )}
           </motion.div>
 
           {/* Información de contacto */}
