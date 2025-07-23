@@ -55,7 +55,7 @@ const WhyChooseUs = () => {
           <div className="flex flex-col md:flex-row items-start justify-center bg-white rounded-2xl px-6 md:px-8 py-6 shadow-lg divide-y md:divide-y-0 md:divide-x divide-gray-200">
 
             {/* Item 1 */}
-            <div className="text-center md:basis-1/4 p-4">
+            <div className="text-center w-full md:basis-1/4 p-4">
               <div className="text-3xl font-bold text-[#006699] mb-3 leading-none">
                 +890
                 <span className="text-xl block">MILLONES</span>
@@ -66,7 +66,7 @@ const WhyChooseUs = () => {
             </div>
 
             {/* Item 2 */}
-            <div className="text-center md:basis-1/4 p-4">
+            <div className="text-center w-full md:basis-1/4 p-4">
               <div className="text-3xl font-bold text-[#006699] uppercase mb-3 leading-none">
                 5.000
                 <span className="text-xl block">Usuarios Activos</span>
@@ -77,7 +77,7 @@ const WhyChooseUs = () => {
             </div>
 
             {/* Item 3 */}
-            <div className="text-center md:basis-1/4 p-4">
+            <div className="text-center w-full md:basis-1/4 p-4">
               <div className="text-3xl font-bold text-[#006699] mb-3 leading-none">
                 120
                 <span className="text-xl block">MILLONES</span>
@@ -88,7 +88,7 @@ const WhyChooseUs = () => {
             </div>
 
             {/* Item 4 */}
-            <div className="text-center md:basis-1/4 p-4">
+            <div className="text-center w-full md:basis-1/4 p-4">
               <div className="text-3xl font-bold text-[#006699] mb-3 leading-none">
                 +480
                 <span className="text-xl block">MILLONES</span>

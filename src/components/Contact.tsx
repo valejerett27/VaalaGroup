@@ -151,12 +151,16 @@ const Contact = () => {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-4xl lg:text-5xl text-white font-extrabold mb-6">
+          <h2 className="text-3xl lg:text-5xl text-white font-extrabold mb-6 text-center max-w-[300px] md:max-w-none mx-auto">
             DESARROLLEMOS{" "}
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#33CCFF] to-[#209ACE]">
+            <span className="block md:inline bg-clip-text text-transparent bg-gradient-to-r from-[#33CCFF] to-[#209ACE]">
               TU IDEA
             </span>
           </h2>
+
+
+
+
           <p className="text-md lg:text-xl  px-4 lg:px-0 font-medium text-gray-300 max-w-3xl mx-auto">
             Estamos listos para convertir tus ideas en realidad. Contáctanos y
             descubre cómo podemos impulsar tu negocio.
@@ -176,7 +180,7 @@ const Contact = () => {
               Solicita una Consulta Gratuita
             </h3>
 
-            
+
 
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
@@ -281,8 +285,8 @@ const Contact = () => {
               >
                 <div
                   className={`relative px-6 py-4 rounded-lg shadow-lg text-center font-semibold max-w-md mx-auto ${alertType === "success"
-                      ? "bg-green-600 text-white"
-                      : "bg-red-600 text-white"
+                    ? "bg-green-600 text-white"
+                    : "bg-red-600 text-white"
                     }`}
                 >
                   {alertType === "success"
@@ -336,8 +340,8 @@ const Contact = () => {
                   <img src={iconSupport} alt="Soporte" className="w-[50px]" />
                   <div>
                     <h4 className="font-semibold text-white mb-1">Horarios de Atención</h4>
-                    <p className="text-gray-300">Lun - Vie: 9:00 AM - 7:00 PM</p>
-                    <p className="text-gray-300">Sáb: 10:00 AM - 2:00 PM</p>
+                    <p className="text-gray-300">Lun - Vie: 9:00 - 18:00</p>
+                    <p className="text-gray-300">Urgencias hasta las 19:00</p>
                   </div>
                 </div>
               </div>

@@ -1,7 +1,15 @@
-
-import { Mail, Phone, MapPin, Linkedin, Twitter, Instagram, Facebook, ArrowUp } from "lucide-react";
-import logoVaala from '../img/vaala_principal.png';
-
+import {
+  Mail,
+  MapPin,
+  Linkedin,
+  Twitter,
+  Instagram,
+  ArrowUp,
+  // Facebook,
+  Phone,
+  MessageCircle
+} from "lucide-react"; // WhatsApp será representado con MessageCircle
+import logoVaala from "../img/vaala_principal.png";
 
 const Footer = () => {
   const scrollToTop = () => {
@@ -22,24 +30,20 @@ const Footer = () => {
         <div className="py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="lg:col-span-2">
-            <img
-              src={logoVaala}
-              alt="Vaala Group"
-              className="h-20 mb-6"
-            />
+            <img src={logoVaala} alt="Vaala Group" className="h-20 mb-6" />
             <p className="text-gray-300 mb-6 leading-relaxed max-w-md">
-              Transformamos ideas en soluciones digitales innovadoras. Somos tu socio estratégico en la era digital, comprometidos con impulsar el crecimiento de tu negocio.
+              Transformamos ideas en soluciones digitales innovadoras. Somos tu
+              socio estratégico en la era digital, comprometidos con impulsar
+              el crecimiento de tu negocio.
             </p>
 
             <div className="space-y-3">
               <div className="flex items-center gap-3">
                 <Mail className="text-cyan-400" size={18} />
-                <span className="text-gray-300">comunicaciones@vaalagroup.cl</span>
+                <span className="text-gray-300">
+                  comunicaciones@vaalagroup.cl
+                </span>
               </div>
-              {/* <div className="flex items-center gap-3">
-                <Phone className="text-cyan-400" size={18} />
-                <span className="text-gray-300">+52 (55) 1234-5678</span>
-              </div> */}
               <div className="flex items-center gap-3">
                 <MapPin className="text-cyan-400" size={18} />
                 <span className="text-gray-300">Viña del Mar, Chile</span>
@@ -49,14 +53,15 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-lg font-semibold mb-6 text-cyan-400">Enlaces Rápidos</h4>
+            <h4 className="text-lg font-semibold mb-6 text-cyan-400">
+              Enlaces Rápidos
+            </h4>
             <ul className="space-y-3">
               {[
                 { name: "Inicio", href: "#inicio" },
                 { name: "Servicios", href: "#servicios" },
                 { name: "Unidades", href: "#proyectos" },
-                // { name: "Equipo", href: "#equipo" },
-                { name: "Contacto", href: "#contacto" }
+                { name: "Contacto", href: "#contacto" },
               ].map((link) => (
                 <li key={link.name}>
                   <button
@@ -72,14 +77,16 @@ const Footer = () => {
 
           {/* Services */}
           <div>
-            <h4 className="text-lg font-semibold mb-6 text-cyan-400">Servicios</h4>
+            <h4 className="text-lg font-semibold mb-6 text-cyan-400">
+              Servicios
+            </h4>
             <ul className="space-y-1">
               {[
                 "Consultoría",
                 "Desarrollo de Sistemas",
                 "Implementación y Optimización de Procesos",
                 "Soporte",
-                "Capacitación"
+                "Capacitación",
               ].map((service) => (
                 <li key={service}>
                   <span className="text-gray-300 hover:text-cyan-400 transition-colors duration-200 cursor-pointer">
@@ -91,53 +98,42 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Newsletter Section */}
-        {/* <div className="py-8 border-t border-gray-800">
-          <div className="flex flex-col lg:flex-row items-center justify-between gap-6">
-            <div>
-              <h4 className="text-xl font-semibold mb-2 text-cyan-400">Mantente Actualizado</h4>
-              <p className="text-gray-300">Recibe las últimas noticias sobre tecnología e innovación.</p>
-            </div>
-            <div className="flex gap-2 w-full max-w-md">
-              <input
-                type="email"
-                placeholder="tu@email.com"
-                className="flex-1 px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:ring-2 focus:ring-cyan-500 focus:border-transparent text-white placeholder-gray-400"
-              />
-              <button className="bg-gradient-to-r from-cyan-600 to-blue-600 text-white px-6 py-3 rounded-lg hover:shadow-lg transition-all duration-300">
-                Suscribirse
-              </button>
-            </div>
-          </div>
-        </div> */}
-
         {/* Social Media & Copyright */}
         <div className="py-8 border-t border-gray-800 flex flex-col lg:flex-row items-center justify-between gap-6">
           <div className="text-gray-400 text-center lg:text-left">
             <p>&copy; 2025 Vaala Group. Todos los derechos reservados.</p>
-            {/* <div className="flex gap-6 mt-2 justify-center lg:justify-start">
-              <a href="#" className="hover:text-cyan-400 transition-colors text-sm">Política de Privacidad</a>
-              <a href="#" className="hover:text-cyan-400 transition-colors text-sm">Términos de Servicio</a>
-              <a href="#" className="hover:text-cyan-400 transition-colors text-sm">Cookies</a>
-            </div> */}
           </div>
 
           <div className="flex items-center gap-4">
             <span className="text-gray-400 text-sm mr-2">Síguenos:</span>
             {[
-              { icon: Facebook, href: "#", color: "hover:text-blue-500" },
-              { icon: Twitter, href: "#", color: "hover:text-blue-400" },
-              { icon: Instagram, href: "#", color: "hover:text-pink-500" },
-              { icon: Linkedin, href: "#", color: "hover:text-blue-600" }
+              {
+                icon: MessageCircle,
+                href: "https://wa.me/56926865401",
+                color: "hover:text-green-500",
+              },
+              {
+                icon: Instagram,
+                href: "https://www.instagram.com/vaalagroup?igsh=bWx4djE3MDMxaTR2",
+                color: "hover:text-pink-500",
+              },
+              {
+                icon: Linkedin,
+                href: "https://www.linkedin.com/company/vaalagroup-innovaci%C3%B3n-tecnol%C3%B3gica/posts/?feedView=all",
+                color: "hover:text-blue-600",
+              },
             ].map((social, index) => (
               <a
                 key={index}
                 href={social.href}
+                target="_blank"
+                rel="noopener noreferrer"
                 className={`text-gray-400 ${social.color} transition-colors duration-200 p-2 rounded-lg hover:bg-gray-800`}
               >
                 <social.icon size={20} />
               </a>
             ))}
+
           </div>
         </div>
       </div>
