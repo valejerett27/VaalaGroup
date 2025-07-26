@@ -57,7 +57,7 @@ const WhyChooseUs = () => {
             {/* Item 1 */}
             <div className="text-center w-full md:basis-1/4 p-4">
               <div className="text-3xl font-bold text-[#006699] mb-3 leading-none">
-                +890
+                +4.500
                 <span className="text-xl block">MILLONES</span>
               </div>
               <div className="text-gray-600 text-sm">
@@ -68,7 +68,7 @@ const WhyChooseUs = () => {
             {/* Item 2 */}
             <div className="text-center w-full md:basis-1/4 p-4">
               <div className="text-3xl font-bold text-[#006699] uppercase mb-3 leading-none">
-                5.000
+                9.000
                 <span className="text-xl block">Usuarios Activos</span>
               </div>
               <div className="text-gray-600 text-sm">
@@ -79,7 +79,7 @@ const WhyChooseUs = () => {
             {/* Item 3 */}
             <div className="text-center w-full md:basis-1/4 p-4">
               <div className="text-3xl font-bold text-[#006699] mb-3 leading-none">
-                120
+                150
                 <span className="text-xl block">MILLONES</span>
               </div>
               <div className="text-gray-600 text-sm">
@@ -90,7 +90,7 @@ const WhyChooseUs = () => {
             {/* Item 4 */}
             <div className="text-center w-full md:basis-1/4 p-4">
               <div className="text-3xl font-bold text-[#006699] mb-3 leading-none">
-                +480
+                +1.700
                 <span className="text-xl block">MILLONES</span>
               </div>
               <div className="text-gray-600 text-sm">

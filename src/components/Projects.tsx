@@ -12,7 +12,7 @@ const Projects = () => {
       description: "Solución tecnológica para la gestión eficiente, segura y conectada de estacionamientos en entornos urbanos y corporativos.",
       image: parkPrincipal,
       tags: ["Control de accesos", "Geolocalización", "KPIs en tiempo real", "Seguridad operacional", "Gestión automatizada"],
-      results: "+2.000 usuarios activos",
+      results: "+2.000 Dispositivos activos",
       link: ""
     },
     {
@@ -21,7 +21,7 @@ const Projects = () => {
       description: "Desarrollamos soluciones digitales personalizadas para mejorar la experiencia y eficiencia en clínicas, hospitales y servicios públicos.",
       image: principalVerde,
       tags: ["Aplicaciones móviles", "Notificaciones inteligentes", "Infraestructura digital", "Paneles de control", "Sector salud."],
-      results: "+3.000 usuarios activos",
+      results: "+7.000 usuarios activos",
       link: "https://vaaladev.cl/home"
     }
   ];
