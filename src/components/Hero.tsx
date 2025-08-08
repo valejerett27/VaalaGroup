@@ -28,7 +28,7 @@ const Hero = () => {
           </h1>
 
           <p className="text-xl sm:text-2xl text-gray-200 font-medium mb-8 max-w-2xl mx-auto leading-none">
-            Transformamos ideas en sistemas tecnológicos que suman valor, orden y eficiencia a nuestros clientes.
+            <b>Somos un holding con propósito:</b> articulamos ideas, talento y tecnología para dar vida a soluciones que transforman industrias y mejoran la vida de las personas.
           </p>
 
 
@@ -42,7 +42,7 @@ const Hero = () => {
             </button>
 
             <button
-              onClick={() => scrollToSection("#servicios")}
+              onClick={() => scrollToSection("#proyectos")}
               className="group bg-white/10 backdrop-blur-sm border border-white/20 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white/20 transition-all duration-300 flex items-center gap-2"
             >
               <Play size={20} />
