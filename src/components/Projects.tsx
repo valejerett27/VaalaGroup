@@ -2,6 +2,7 @@
 import { ExternalLink, Github } from "lucide-react";
 import parkPrincipal from '../img/park_principal.png';
 import principalVerde from '../img/Principal_verde.png';
+import { a } from "node_modules/framer-motion/dist/types.d-Bq-Qm38R";
 
 
 const Projects = () => {
@@ -13,7 +14,7 @@ const Projects = () => {
       image: parkPrincipal,
       tags: ["Control de accesos", "Geolocalización", "KPIs en tiempo real", "Seguridad operacional", "Gestión automatizada"],
       results: "+2.000 Dispositivos activos",
-      link: ""
+      link: "https://park-by-vaala.kalexmart.com/"
     },
     {
       title: "Vaaladev",
@@ -43,6 +44,13 @@ const Projects = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {projects.map((project, index) => (
+            <a
+            href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+            >
+
+            
             <div
               key={index}
               className="group bg-[#1F2937] rounded-2xl overflow-hidden hover:shadow-2xl transition-all duration-300 hover:-translate-y-2"
@@ -93,7 +101,7 @@ const Projects = () => {
                   <div className="text-cyan-400 font-bold text-lg">
                     {project.results}
                   </div>
-                  <a
+                  {/* <a
                     href={project.link}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -101,11 +109,12 @@ const Projects = () => {
                   >
                     Ir a la página
                     <span className="transition-transform group-hover:translate-x-1">→</span>
-                  </a>
+                  </a> */}
 
                 </div>
               </div>
             </div>
+            </a>
           ))}
         </div>
       </div>

@@ -43,7 +43,7 @@ const WhyChooseUs = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl uppercase font-extrabold text-[#022E46] mb-6">
             Nuestros
-            <span className="bg-gradient-to-r from-[#33CCFF] to-[#209ACE] bg-clip-text text-transparent uppercase">Resultados.</span>
+            <span className="bg-gradient-to-r from-[#33CCFF] to-[#209ACE] bg-clip-text text-transparent uppercase"> Resultados</span>
           </h2>
           {/* <p className="text-xl text-[#006699] font-light max-w-3xl mx-auto">
             Somos más que un proveedor de tecnología. Somos tu socio estratégico
@@ -56,9 +56,9 @@ const WhyChooseUs = () => {
 
             {/* Item 1 */}
             <div className="text-center w-full md:basis-1/4 p-4">
-              <div className="text-3xl font-bold text-[#006699] mb-3 leading-none">
+              <div className="text-3xl font-bold text-[#33CCFF] mb-3 leading-none">
                 +4.500
-                <span className="text-xl block">MILLONES</span>
+                <span className="text-xl block text-[#006699]">MILLONES</span>
               </div>
               <div className="text-gray-600 text-sm">
                 Mensuales en transacciones soportados en nuestros sistemas
@@ -67,9 +67,9 @@ const WhyChooseUs = () => {
 
             {/* Item 2 */}
             <div className="text-center w-full md:basis-1/4 p-4">
-              <div className="text-3xl font-bold text-[#006699] uppercase mb-3 leading-none">
+              <div className="text-3xl font-bold text-[#33CCFF] uppercase mb-3 leading-none">
                 9.000
-                <span className="text-xl block">Usuarios Activos</span>
+                <span className="text-xl block text-[#006699]">Usuarios Activos</span>
               </div>
               <div className="text-gray-600 text-sm">
                 en plataforma portal de Salud
@@ -78,9 +78,9 @@ const WhyChooseUs = () => {
 
             {/* Item 3 */}
             <div className="text-center w-full md:basis-1/4 p-4">
-              <div className="text-3xl font-bold text-[#006699] mb-3 leading-none">
+              <div className="text-3xl font-bold text-[#33CCFF] mb-3 leading-none">
                 150
-                <span className="text-xl block">MILLONES</span>
+                <span className="text-xl block text-[#006699]">MILLONES</span>
               </div>
               <div className="text-gray-600 text-sm">
                 Disminución de riesgo financiero
@@ -89,9 +89,9 @@ const WhyChooseUs = () => {
 
             {/* Item 4 */}
             <div className="text-center w-full md:basis-1/4 p-4">
-              <div className="text-3xl font-bold text-[#006699] mb-3 leading-none">
+              <div className="text-3xl font-bold text-[#33CCFF] mb-3 leading-none">
                 +1.700
-                <span className="text-xl block">MILLONES</span>
+                <span className="text-xl block text-[#006699]">MILLONES</span>
               </div>
               <div className="text-gray-600 text-sm">
                 Utilidades hemos aportando a nuestros clientes

@@ -3,7 +3,7 @@ import { Code, Smartphone, Globe, Database, Shield, Zap } from "lucide-react";
 import { features } from "process";
 import Servicio1 from '../img/SERVICIOS_01.png';
 import Servicio2 from '../img/SERVICIOS_02.png';
-import Servicio3 from '../img/SERVICIOS_03.png'; 
+import Servicio3 from '../img/SERVICIOS_03.png';
 
 const Services = () => {
   const services = [
@@ -59,40 +59,38 @@ const Services = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-start">
           {services.map((service, index) => (
             <div
               key={index}
-              className="group bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100"
+              className="group bg-white rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-900 border border-gray-100 flex flex-col items-center text-center"
             >
-              <div className="bg-gradient-to-br from-[#006699] to-[#33CCFF] w-16 h-16 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                <img src={service.icon} alt={service.title} className="text-white" />
+              {/* Ícono visible siempre */}
+              <div className="bg-gradient-to-br from-[#006699] to-[#33CCFF] w-16 h-16 rounded-full flex items-center justify-center mb-2 group-hover:scale-110 transition-transform duration-900">
+                <img src={service.icon} alt={service.title} className="w-16 h-16" />
               </div>
-              
-              <h3 className="text-2xl font-bold text-[#006699] mb-4 group-hover:text-cyan-600 transition-colors duration-300">
-                {service.title}
-              </h3>
-              
-              <p className="text-[#006699] mb-6 leading-relaxed">
-                {service.description}
-              </p>
-              
-              <ul className="space-y-2">
-                {service.features.map((feature, idx) => (
-                  <li key={idx} className="flex items-center text-sm text-[#006699]">
-                    <div className="w-2 h-2 bg-[#33CCFF] rounded-full mr-3"></div>
-                    {feature}
-                  </li>
-                ))}
-              </ul>
-              
-              {/* <div className="mt-6 pt-6 border-t border-gray-100">
-                <button className="text-cyan-600 font-semibold hover:text-cyan-700 transition-colors duration-200 flex items-center gap-2 group-hover:gap-3">
-                  Saber más
-                  <span className="transition-all duration-200">→</span>
-                </button>
-              </div> */}
+
+              {/* Contenido oculto inicialmente */}
+              <div className="overflow-hidden max-h-0 opacity-0 group-hover:max-h-[500px] group-hover:opacity-100 transition-all duration-500 ease-in-out mt-2">
+                <h3 className="text-xl font-bold text-[#006699] mt-2 group-hover:text-cyan-600 transition-colors duration-900">
+                  {service.title}
+                </h3>
+
+                <p className="text-[#006699] mt-2 mb-4 text-sm leading-relaxed px-2">
+                  {service.description}
+                </p>
+
+                <ul className="space-y-2 text-sm px-4 pb-2">
+                  {service.features.map((feature, idx) => (
+                    <li key={idx} className="flex items-start text-[#006699]">
+                      <div className="w-2 h-2 bg-[#33CCFF] rounded-full mt-1 mr-2 shrink-0"></div>
+                      <span>{feature}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </div>
+
           ))}
         </div>
       </div>
