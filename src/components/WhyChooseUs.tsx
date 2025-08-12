@@ -43,7 +43,7 @@ const WhyChooseUs = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl uppercase font-extrabold text-[#022E46] mb-6">
             Nuestros
-            <span className="bg-gradient-to-r from-[#33CCFF] to-[#209ACE] bg-clip-text text-transparent uppercase">Resultados</span>
+            <span className="bg-gradient-to-r from-[#33CCFF] to-[#209ACE] bg-clip-text text-transparent uppercase">Resultados.</span>
           </h2>
           {/* <p className="text-xl text-[#006699] font-light max-w-3xl mx-auto">
             Somos más que un proveedor de tecnología. Somos tu socio estratégico
