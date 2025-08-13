@@ -69,12 +69,12 @@ const Services = () => {
               <div className="bg-gradient-to-br from-[#006699] to-[#33CCFF] w-16 h-16 rounded-full flex items-center justify-center mb-2 group-hover:scale-110 transition-transform duration-900">
                 <img src={service.icon} alt={service.title} className="w-16 h-16" />
               </div>
-
+              <h3 className="text-xl font-bold text-[#006699] mt-2 group-hover:text-cyan-600 transition-colors duration-900">
+                {service.title}
+              </h3>
               {/* Contenido oculto inicialmente */}
               <div className="overflow-hidden max-h-0 opacity-0 group-hover:max-h-[500px] group-hover:opacity-100 transition-all duration-500 ease-in-out mt-2">
-                <h3 className="text-xl font-bold text-[#006699] mt-2 group-hover:text-cyan-600 transition-colors duration-900">
-                  {service.title}
-                </h3>
+
 
                 <p className="text-[#006699] mt-2 mb-4 text-sm leading-relaxed px-2">
                   {service.description}

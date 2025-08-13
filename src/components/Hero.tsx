@@ -37,16 +37,16 @@ const Hero = () => {
               onClick={() => scrollToSection("#contacto")}
               className="group bg-gradient-to-r from-[#33CCFF] to-[#006699] text-white px-8 py-4 rounded-full text-lg font-semibold hover:shadow-2xl hover:scale-105 transition-all duration-300 flex items-center gap-2"
             >
-              Impulsa tu solución
-              <ArrowRight className="group-hover:translate-x-1 transition-transform duration-200" size={20} />
+              Explorar Soluciones
+              {/* <ArrowRight className="group-hover:translate-x-1 transition-transform duration-200" size={20} /> */}
             </button>
 
             <button
               onClick={() => scrollToSection("#proyectos")}
               className="group bg-white/10 backdrop-blur-sm border border-white/20 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white/20 transition-all duration-300 flex items-center gap-2"
             >
-              <Play size={20} />
-              Explorar soluciones
+              {/* <Play size={20} /> */}
+              Nuestra Historia
             </button>
           </div>
 
