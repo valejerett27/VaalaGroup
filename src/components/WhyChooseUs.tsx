@@ -122,7 +122,7 @@ const WhyChooseUs = () => {
           ))}
         </div> */}
 
-        <div className="mt-16 bg-gradient-to-r from-[#006699] to-[#33CCFF] rounded-3xl p-8 lg:p-12 text-center text-white">
+        {/* <div className="mt-16 bg-gradient-to-r from-[#006699] to-[#33CCFF] rounded-3xl p-8 lg:p-12 text-center text-white">
           <h3 className="text-2xl lg:text-3xl lg:text-4xl font-bold uppercase mb-4">
             ¿LISTO PARA DAR EL SIGUIENTE PASO EN TU TRANSFORMACIÓN DIGITAL?
           </h3>
@@ -134,7 +134,7 @@ const WhyChooseUs = () => {
               Conoce nuestras soluciones
             </button>
           </a>
-        </div>
+        </div> */}
       </div>
     </section>
   );
