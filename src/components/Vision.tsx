@@ -13,7 +13,7 @@ const Vision = () => (
           Visión
         </span>
       </h2>
-      <p className="text-center text-lg lg:text-xl font-medium max-w-3xl mx-auto text-[#022E46]">
+      <p className="text-center text-lg lg:text-xl font-medium max-w-3xl py-6 mx-auto text-[#022E46]">
         Ser el{" "}
         <span className="font-bold">
           holding tecnológico más influyente de Latinoamérica

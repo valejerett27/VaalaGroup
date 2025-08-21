@@ -89,7 +89,7 @@ const Services = () => {
                   {service.features.map((feature, idx) => (
                     <li key={idx} className="flex items-start text-[#006699]">
                       <div className="w-2 h-2 bg-[#33CCFF] rounded-full mt-1 mr-2 shrink-0"></div>
-                      <span>{feature}</span>
+                      <span className="table ml-2">{feature}</span>
                     </li>
                   ))}
                 </ul>
