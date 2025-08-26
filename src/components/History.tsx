@@ -35,7 +35,7 @@ const historyData: Item[] = [
 
 const History = () => {
     return (
-        <section id="historia" className="relative py-16 md:py-20 bg-gray-50">
+        <section id="historia" className="relative py-16 md:py-20 bg-[#0A3850]">
             {/* Marca de agua */}
             <div className="pointer-events-none absolute inset-0 flex items-center justify-center">
                 <img
@@ -46,7 +46,7 @@ const History = () => {
             </div>
 
             <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <h2 className="text-4xl lg:text-5xl font-extrabold text-center uppercase mb-10 md:mb-16 text-[#022E46]">
+                <h2 className="text-4xl lg:text-5xl font-extrabold text-center uppercase mb-10 md:mb-16 text-[#FFF]">
                     Nuestra{" "}
                     <span className="bg-gradient-to-r from-[#33CCFF] to-[#209ACE] bg-clip-text text-transparent">
                         Historia
@@ -79,7 +79,7 @@ const History = () => {
                 {/* ====== DESKTOP/TABLET (horizontal) ====== */}
                 <div className="hidden md:block relative">
                     {/* Línea horizontal central */}
-                    <div className="absolute left-0 right-0 top-1/2 -translate-y-1/2 h-[2px] bg-[#33CCFF]/30" />
+                    <div className="absolute left-0 right-0 top-1/2 -translate-y-1/2 h-[2px] bg-[#FFF]/30" />
 
                     <div className="grid grid-cols-5 gap-4">
                         {historyData.map((item, idx) => {
@@ -98,11 +98,11 @@ const History = () => {
 
                                     {/* AÑO (siempre cerca del círculo) */}
                                     {isDown ? (
-                                        <div className="absolute left-1/2 -translate-x-1/2 top-[calc(50%-44px)] font-bold text-[#022E46]">
+                                        <div className="absolute left-1/2 -translate-x-1/2 top-[calc(50%-44px)] font-bold text-[#FFF]">
                                             {item.year}
                                         </div>
                                     ) : (
-                                        <div className="absolute left-1/2 -translate-x-1/2 top-[calc(50%+18px)] font-bold text-[#022E46]">
+                                        <div className="absolute left-1/2 -translate-x-1/2 top-[calc(50%+18px)] font-bold text-[#FFF]">
                                             {item.year}
                                         </div>
                                     )}
@@ -110,16 +110,16 @@ const History = () => {
                                     {/* NÚMERO + DESCRIPCIÓN */}
                                     {isDown ? (
                                         <div className="absolute left-1/2 -translate-x-1/2 top-[calc(50%+44px)] text-center w-full px-2">
-                                            <div className="text-[#33CCFF] font-bold">{item.number}</div>
-                                            <p className="mx-auto text-[#022E46] leading-snug
+                                            <div className="text-[#FFF] font-bold">{item.number}</div>
+                                            <p className="mx-auto text-[#FFF] leading-snug
                                   text-[13px] lg:text-sm max-w-[240px]">
                                                 {item.description}
                                             </p>
                                         </div>
                                     ) : (
                                         <div className="absolute left-1/2 -translate-x-1/2 top-[calc(50%-150px)] text-center w-full px-2">
-                                            <div className="text-[#33CCFF] font-bold">{item.number}</div>
-                                            <p className="mx-auto text-[#022E46] leading-snug
+                                            <div className="text-[#FFF] font-bold">{item.number}</div>
+                                            <p className="mx-auto text-[#FFF] leading-snug
                                   text-[13px] lg:text-sm max-w-[260px]">
                                                 {item.description}
                                             </p>
@@ -132,7 +132,7 @@ const History = () => {
                         {/* 2025 (sin número/desc) — círculo centrado y año junto a la línea */}
                         <div className="relative h-[260px]">
                             <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-7 h-7 rounded-full bg-[#33CCFF] border-white border-4  shadow-xl" />
-                            <div className="absolute left-1/2 -translate-x-1/2 top-[calc(50%-44px)] font-bold text-[#022E46]">
+                            <div className="absolute left-1/2 -translate-x-1/2 top-[calc(50%-44px)] font-bold text-[#FFF]">
                                 2025
                             </div>
                         </div>
