@@ -6,7 +6,7 @@ import Projects from "@/components/Projects";
 // Las siguientes importaciones se comentaron porque sus componentes están desactivados en el JSX:
 // import Testimonials from "@/components/Testimonials";
 // import Team from "@/components/Team";
-import Contact from "@/components/Contact";
+// import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import Vision from "@/components/Vision";   // importación por defecto
 import History from "@/components/History"; // importación por defecto
@@ -24,7 +24,7 @@ const Index = () => {
       <Projects />
       {/* <Testimonials /> */}
       {/* <Team /> */}
-      <Contact />
+      {/* <Contact /> */}
       <Footer />
       {/* <FloatingWhatsApp /> */}
     </div>
