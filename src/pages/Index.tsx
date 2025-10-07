@@ -7,6 +7,8 @@ import Projects from "@/components/Projects";
 // import Testimonials from "@/components/Testimonials";
 // import Team from "@/components/Team";
 // import Contact from "@/components/Contact";
+import Timeline from "@/components/Timeline";
+
 import Footer from "@/components/Footer";
 import Vision from "@/components/Vision";   // importación por defecto
 import History from "@/components/History"; // importación por defecto
@@ -19,7 +21,9 @@ const Index = () => {
       <Hero />
       <Services />
       <Vision />
-      <History />
+      {/* <History /> */}
+      {/* <Timeline /> aquí está oculta la línea de tiempo Nuestra Historia */}
+
       <WhyChooseUs />
       <Projects />
       {/* <Testimonials /> */}
