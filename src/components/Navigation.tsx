@@ -63,12 +63,12 @@ const Navigation = () => {
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-cyan-600 group-hover:w-full transition-all duration-300"></span>
               </button>
             ))}
-            <button
+            {/* <button
               onClick={() => scrollToSection("#contacto")}
               className="bg-gradient-to-r uppercase from-[#006699] to-[#4BC2F1] text-white px-6 py-2 rounded-full hover:shadow-lg hover:scale-105 transition-all duration-200"
             >
               Contáctanos
-            </button>
+            </button> */}
           </div>
 
           {/* Mobile menu button */}
